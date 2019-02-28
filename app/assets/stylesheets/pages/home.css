@@ -1,0 +1,34 @@
+button {
+  float: right;
+}
+
+div.container {
+  padding-top: 5%;
+}
+
+body h1 {
+  display:inline-block;
+  margin-left: 10%;
+  font-size: 24px;
+}
+
+body h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+p{
+  display:inline-block;
+  margin-left: 10%;
+}
+
+img {
+  float: left;
+  height: 104px;
+  width: 104px;
+  object-fit: cover;
+}
+
+ion-icon {
+  font-size: 20px;
+}
