@@ -1,34 +1,25 @@
-button {
+.user-profile-buttons button {
   float: right;
 }
 
-div.container {
+#user-profile.container {
   padding-top: 5%;
 }
 
-body h1 {
+.user-profile-text p {
+  display:inline-block;
+  margin-left: 10%;
+}
+
+.user-profile-header h1 {
   display:inline-block;
   margin-left: 10%;
   font-size: 24px;
 }
 
-body h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-p{
-  display:inline-block;
-  margin-left: 10%;
-}
-
-img {
+.user-profile-image img {
   float: left;
   height: 104px;
   width: 104px;
   object-fit: cover;
-}
-
-ion-icon {
-  font-size: 20px;
 }
