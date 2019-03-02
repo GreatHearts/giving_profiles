@@ -2,7 +2,6 @@
   width:100%;
   height: 60px;
   background-color: #f3c937;
-  display: block;
   overflow: hidden; //fix margin collapse in logo. 
 }
 
@@ -14,4 +13,15 @@
   font-weight: bold;
   margin-left: 32px;
   margin-top: 16px;
+}
+
+.logo > a{
+  text-decoration: none;
+  color: #333333;
+}
+
+
+.header-search{
+  margin-left: 120px;
+  color: #555555;
 }
