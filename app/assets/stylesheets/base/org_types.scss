@@ -1,0 +1,61 @@
+
+// NOTE: THESE ORG TYPE BG AND TEXT COLORS AREN'T ACCURATE. needs to be reviewed. 
+
+$environment: #99cc66;
+$health: #7755cc;
+$religion: #bbbbbb;
+$human_rights: #ff88aa;
+$community_development: #4267b2;
+$animals: #22aa99;
+$education: #1199ee;
+$international: #f3c937;
+$human_services: #aaaaaa;
+
+$environment_text: var(--theme-secondary);
+$health_text: var(--text-light);
+$religion_text: var(--theme-secondary);
+$human_rights_text: var(--theme-secondary);
+$community_development_text: var(--text-light);
+$animals_text: var(--text-light);
+$education_text: var(--text-light);
+$international_text: var(--theme-secondary);
+$human_services_text: var(--theme-secondary);
+
+$org_type_colors: (
+  "environment": $environment,
+  "health": $health,
+  "religion": $religion,
+  "human_rights": $human_rights,
+  "community_development": $community_development,
+  "animals": $animals,
+  "education": $education,
+  "international": $international,
+  "human_services": $human_services
+);
+
+
+$org_type_text_colors: (
+  "environment": $environment_text,
+  "health": $health_text,
+  "religion": $religion_text,
+  "human_rights": $human_rights_text,
+  "community_development": $community_development_text,
+  "animals": $animals_text,
+  "education": $education_text,
+  "international": $international_text,
+  "human_services": $human_services_text
+);
+
+
+
+@each $key, $color in $org_type_colors {
+  .color_#{$key} {
+    background-color: $color;
+  }
+}
+
+@each $keyy, $colorr in $org_type_text_colors {
+  .text_#{$keyy} {
+    color: $colorr;
+  }
+}

@@ -3,6 +3,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "base/color_and_text_styles";
+@import "base/org_types";
 
 // Layouts CSS
 @import "layouts/application";
@@ -11,3 +12,9 @@
 
 // Pages CSS
 @import "pages/home";
+
+// User CSS
+@import "users";
+
+@import "bootstrap";
+

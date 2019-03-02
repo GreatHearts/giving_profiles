@@ -1,0 +1,9 @@
+<div class="favorite-organization">
+  <div class="organization-header">
+    <div class="organization-name"><%= user_fav_org.organization.name %></div>
+    <% org_type = user_fav_org.organization.org_type %>
+    <div class="org-type color_<%= org_type %> text_<%= org_type %>">#<%= org_type %></div>
+  </div>
+
+  <div class="fav-org-text"><%= user_fav_org.description %></div>
+</div>
