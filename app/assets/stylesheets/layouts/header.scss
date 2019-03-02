@@ -1,28 +1,30 @@
-.page-header{
+.page-header {
   height: 60px;
-  background-color: #f3c937;
+  background-color: var(--theme-primary);
   display: flex;
 }
 
-.logo{
+.logo {
   width: 60px;
+  height: 28px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   margin-top: 16px;
   margin-left: 32px;
-  font-size: 12px;
-  font-family: Roboto, Helvetica, sans-serif; 
-  line-height: normal;
-  font-weight: bold;
 }
-
-.logo > a{
+.logo > a {
   text-decoration: none;
-  color: #333333;
+  color: var(--theme-secondary);
 }
 
-
-.header-search{
+.header-search {
   font-family: Roboto, Helvetica, sans-serif; 
-  color: #555555;
+  color: var(--text-body);
   margin-left: 36px;
   margin-top: 20px;
 }
