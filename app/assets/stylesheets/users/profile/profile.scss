@@ -1,0 +1,65 @@
+.profile-body {
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 150px auto auto; //this is okay for now. Can adjust later if needed. 
+  padding-top: 100px; //for testing. May not be needed later. 
+  .badges {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+  .donations-by-causes {
+    grid-column: 4 / 8;
+    grid-row: 1 / 2;
+  }
+  .past-donations {
+    grid-column: 8 / 11;
+    grid-row: 1 / 4;
+  }
+  .philosophy {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+  .favorite-organizations {
+    grid-column: 4 / 8;
+    grid-row: 2 / 4;
+  }
+
+  //attempt to do responsive design.
+  @media all and (max-width: 600px){ //still playing around with this. okay for now. pending further specs and exploring.
+    display: flex;
+    flex-direction: column;
+    .badges { order: 0; }
+    .philosophy { order: 1; }
+    .donations-by-causes { order: 2; }
+    .past-donations { order: 3; }
+    .favorite-organizations { order: 4; }
+    .brand-text { order: 5; }
+  }
+}
+
+.profile-section {
+  .section-title{
+    width: 296px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: var(--text-subtitle);
+  }
+
+  .divider {
+    border-top: solid 1.5px var(--element-toned-down);
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+// this is just for testing. Will get rid of this later. 
+.profile-content-container > div {
+  // background-color: #EAEAEA;
+}

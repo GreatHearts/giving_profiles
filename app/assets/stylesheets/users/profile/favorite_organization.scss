@@ -1,0 +1,53 @@
+.profile-section.favorite-organizations {
+  .user-fav-orgs {
+    .favorite-organization {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      .org-logo{
+        margin-right: 15px;
+      }
+      .org-content{
+        flex-grow: 2;
+        .organization-header {
+          display: flex;
+          justify-content: space-between;
+          .organization-name{
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: 0.2px;
+            color: var(--text-title);
+            margin-bottom: 5px;
+          }
+          .org-type{
+            height: 24px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            border-radius: 12px;
+            padding: 5px 10px;
+            margin-left: 5px;
+          }
+        }
+        .fav-org-text {
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.14;
+          letter-spacing: normal;
+          color: var(--text-body);
+        }
+      }
+    }
+  }
+}

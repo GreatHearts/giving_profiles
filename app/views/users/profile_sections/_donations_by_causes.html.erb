@@ -1,5 +1,25 @@
 <%= render "users/profile_sections/profile_section", title: "DONATIONS BY CAUSES"  do %>
-  <p>
-    THIS IS A PLACE HOLDER. WILL B IMPLEMENTED LATER.
-  </p>
+  <div class="donations-bars">
+
+    <!-- These divs are obviously place hoders. Will be dynamically generated when properly implemented. -->
+    <div class="international-bar donation-bar bg_color_international" data-percent="45" data-cause="international"></div>
+    <div class="environment-bar donation-bar bg_color_environment" data-percent="22" data-cause="environment"></div>
+    <div class="education-bar donation-bar bg_color_education" data-percent="19" data-cause="education"></div>
+    <div class="health-bar donation-bar bg_color_health" data-percent="14" data-cause="health"></div>
+
+    <div class="international-text donation-cause-text" data-percent="45" data-cause="international">#International</div>
+    <div class="environment-text donation-cause-text" data-percent="22" data-cause="environment">#Environment</div>
+    <div class="education-text donation-cause-text" data-percent="19" data-cause="education">#Education</div>
+    <div class="health-text donation-cause-text" data-percent="14" data-cause="health">#Health</div>
+
+    <div class="international-percent donation-percent" data-percent="45" data-cause="international">45%</div>
+    <div class="environment-percent donation-percent" data-percent="22" data-cause="environment">22%</div>
+    <div class="education-percent donation-percent" data-percent="19" data-cause="education">19%</div>
+    <div class="health-percent donation-percent" data-percent="14" data-cause="health">14%</div>
+
+    <div class="highest-donation-bar bg_color_international" data-percent="45" data-cause="international"></div> 
+
+  </div>
+
+  <div class="reason-for-giving">When I give, I often give to international charities, where my dollar can go really far.</div>
 <% end %>

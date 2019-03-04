@@ -3,18 +3,18 @@
 
 $environment: #99cc66;
 $health: #7755cc;
-$religion: #bbbbbb;
-$human_rights: #ff88aa;
-$community_development: #4267b2;
+$religion: #F65633;
+$human_rights: #4267b2;
+$community_development: #ff88aa;
 $animals: #22aa99;
 $education: #1199ee;
 $international: #f3c937;
-$human_services: #aaaaaa;
+$human_services: #EA958C;
 
 $environment_text: var(--theme-secondary);
 $health_text: var(--text-light);
-$religion_text: var(--theme-secondary);
-$human_rights_text: var(--theme-secondary);
+$religion_text: var(--text-light);
+$human_rights_text: var(--text-light);
 $community_development_text: var(--text-light);
 $animals_text: var(--text-light);
 $education_text: var(--text-light);
@@ -33,7 +33,6 @@ $org_type_colors: (
   "human_services": $human_services
 );
 
-
 $org_type_text_colors: (
   "environment": $environment_text,
   "health": $health_text,
@@ -46,16 +45,20 @@ $org_type_text_colors: (
   "human_services": $human_services_text
 );
 
-
-
 @each $key, $color in $org_type_colors {
-  .color_#{$key} {
+  .bg_color_#{$key} {
     background-color: $color;
   }
 }
 
-@each $keyy, $colorr in $org_type_text_colors {
+@each $key, $color in $org_type_colors {
+  .color_#{$key} {
+    color: $color;
+  }
+}
+
+@each $keyy, $color in $org_type_text_colors {
   .text_#{$keyy} {
-    color: $colorr;
+    color: $color;
   }
 }

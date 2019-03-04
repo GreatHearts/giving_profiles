@@ -7,4 +7,9 @@ class User < ApplicationRecord
 
   validates :fb_id, uniqueness: true, presence: true #this can be removed when some other signup/login method is added. 
   validates :email, uniqueness: true
+
+  def badges 
+    @badges ||= Organization.joins(donations: :user).where("user_id = ?", id).pluck(:org_type).uniq
+  end
+
 end

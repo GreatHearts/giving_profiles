@@ -1,7 +1,7 @@
 <%= render "users/profile_sections/profile_section", title: "PAST DONATIONS"  do %>
   
   <div class ="mini-user-profile-info"> <!-- need to come up with better class name -->
-    <%= fa_icon "user-circle 2x" %> <!-- Place holder for now. -->
+    <%= fa_icon "user-circle 2x", class: "mini-profile-pic" %> <!-- Place holder for now. -->
     <span class="user-name"><%= @user.name %></span>
   </div>
   <div class="search-my-past-donations">
@@ -10,7 +10,7 @@
 
   <div class="donations">
     <% @user.donations[0..2].compact.each do |donation| %> <!-- Currerntly just showing first 3 for now until we decide what to do. -->
-      <%= render "users/profile_sections/donation", donation: donation %>
+      <%= render "users/profile_sections/past_donation", donation: donation %>
     <% end %>
   </div>
 

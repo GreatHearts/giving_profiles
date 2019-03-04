@@ -1,0 +1,22 @@
+.profile-body .badges {
+  .badges-row{
+    // display: flex;
+    justify-content: space-between;
+    .donation-badge {
+      font-size: 26px;
+      margin-left: 10px; //** note: think of better way to achieve spacing. 
+      margin-right: 10px;//** 
+    }
+    margin-bottom: 10px; //**
+  }
+  .remaining-badges {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: var(--text-body);
+  }
+}
