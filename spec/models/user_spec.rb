@@ -3,6 +3,8 @@ require "rails_helper"
 RSpec.describe User, type: :model do
   subject { User.new(name: "Foo Bar") }
 
+  it { should define_enum_for(:favorite_cause).backed_by_column_of_type(:string) }
+
   it { should have_many(:user_favorite_organizations).dependent(:destroy) }
   it { should have_many(:donations).dependent(:destroy) }
   it do
