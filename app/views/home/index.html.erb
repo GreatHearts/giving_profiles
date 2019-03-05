@@ -1,2 +1,24 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<body class="cover-container">
+  <section id="login">
+    <div class="cover-container container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <main role="main" class="inner cover">
+        <div class="row">
+          <div class="card col-sm">
+            <div class="card-body">
+              <a href="#" class="btn btn-warning" role="button" aria-pressed="true"><%= fa_icon "heart-o" %></a>
+              <h2 class="card-subtitle mb-2 text-muted">Share your donations</h2>
+              <p class="card-text">Share your donations with your friends and the community.</p>
+              <p class="card-text">See what charitable causes your friends care about.</p>
+              <a href="#" class="w-100 p-3 btn btn-primary btn-sm active" role="button" aria-pressed="true"><%= fa_icon "facebook-square", class: "pull-left fa-2x", text: "Login with Facebook" %></a>
+            </div>
+          </div>
+          <small class="text-muted">Photo by
+            <a href="https://unsplash.com/@perrygrone" target="_blank">Perry Grone</a>
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </small>
+        </div>
+      </main>
+    </div>
+  </section>
+</body>

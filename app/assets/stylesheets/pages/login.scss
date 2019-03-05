@@ -1,0 +1,32 @@
+///login page styleing
+
+#login {
+  background-image: url("BackgroundImage.jpeg");
+  background-size: cover;
+    .card {
+      border-radius: 12px;
+      margin-top: 30vw;
+      margin-left: 5%;
+      margin-right: 5%;
+      .fa-heart-o{
+        color: white;
+      }
+      .facebook-square{
+        margin: 0;
+      }
+      .btn-warning{
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+      .btn-primary{
+        overflow: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 4px;
+        background-color: $facebook_blue;
+      }
+    }
+    small {
+        margin: 2% 5% 2% 5%;
+    }
+}
