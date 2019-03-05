@@ -1,0 +1,30 @@
+.page-header {
+  height: 60px;
+  background-color: var(--theme-primary);
+  display: flex;
+}
+
+.logo {
+  width: 60px;
+  height: 28px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 16px;
+  margin-left: 32px;
+}
+.logo > a {
+  text-decoration: none;
+  color: var(--theme-secondary);
+}
+
+.header-search {
+  font-family: Roboto, Helvetica, sans-serif; 
+  color: var(--text-body);
+  margin-left: 36px;
+  margin-top: 20px;
+}
