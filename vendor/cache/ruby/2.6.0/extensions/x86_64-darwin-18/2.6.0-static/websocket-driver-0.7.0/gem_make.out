@@ -1,0 +1,15 @@
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+/Users/Rashad/.rbenv/versions/2.6.1/bin/ruby -I /Users/Rashad/.rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190303-46366-1pghun.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20190303-46366-1cs8e7q

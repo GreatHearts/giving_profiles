@@ -1,0 +1,19 @@
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/byebug-11.0.0/ext/byebug
+/Users/Rashad/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/Rashad/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20190303-20350-wax6y5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/byebug-11.0.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/byebug-11.0.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/byebug-11.0.0/ext/byebug
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20190303-20350-17q3slv/byebug

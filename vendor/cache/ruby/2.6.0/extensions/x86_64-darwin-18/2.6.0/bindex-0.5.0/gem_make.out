@@ -1,0 +1,15 @@
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+/Users/Rashad/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/Rashad/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0 -r ./siteconf20190303-2209-9bph3r.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/Rashad/Documents/Projects/giving_profiles/vendor/cache/ruby/2.6.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190303-2209-a5ml4r/bindex
