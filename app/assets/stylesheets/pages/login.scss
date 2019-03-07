@@ -1,6 +1,6 @@
 ///login page styleing
 
-#login {
+.login {
   background-image: url("BackgroundImage.jpeg");
   background-size: cover;
     .card {
@@ -20,8 +20,6 @@
       }
       .btn-primary{
         overflow: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
         border-radius: 4px;
         background-color: $facebook_blue;
       }
