@@ -1,55 +1,52 @@
 
 // NOTE: THESE ORG TYPE BG AND TEXT COLORS AREN'T ACCURATE. needs to be reviewed. 
-
-$environment: #99cc66;
-$health: #7755cc;
-$religion: #F65633;
-$human_rights: #4267b2;
-$community: #ff88aa;
-$animals: #22aa99;
-$education: #1199ee;
-$international: #f3c937;
+$animals:        #22aa99;
+$community:      #ff88aa;
+$education:      #1199ee;
+$environment:    #99cc66;
+$health:         #7755cc;
+$human_rights:   #4267b2;
 $human_services: #EA958C;
-
-$environment_text: var(--theme-secondary);
-$health_text: var(--text-light);
-$religion_text: var(--text-light);
-$human_rights_text: var(--text-light);
-$community_text: var(--text-light);
-$animals_text: var(--text-light);
-$education_text: var(--text-light);
-$international_text: var(--theme-secondary);
-$human_services_text: var(--theme-secondary);
+$international:  #f3c937;
+$religion:       #F65633;
 
 $org_type_colors: (
-  "environment": $environment,
-  "health": $health,
-  "religion": $religion,
-  "human_rights": $human_rights,
-  "community": $community,
-  "animals": $animals,
-  "education": $education,
-  "international": $international,
+  "environment":    $environment,
+  "health":         $health,
+  "religion":       $religion,
+  "human_rights":   $human_rights,
+  "community":      $community,
+  "animals":        $animals,
+  "education":      $education,
+  "international":  $international,
   "human_services": $human_services
 );
 
-$org_type_text_colors: (
-  "environment": $environment_text,
-  "health": $health_text,
-  "religion": $religion_text,
-  "human_rights": $human_rights_text,
-  "community": $community_text,
-  "animals": $animals_text,
-  "education": $education_text,
-  "international": $international_text,
+
+
+// for deciding what text color goes into org-type-oval. 
+$environment_text:    var(--theme-secondary);
+$health_text:         var(--text-light);
+$religion_text:       var(--text-light);
+$human_rights_text:   var(--text-light);
+$community_text:      var(--text-light);
+$animals_text:        var(--text-light);
+$education_text:      var(--text-light);
+$international_text:  var(--theme-secondary);
+$human_services_text: var(--theme-secondary);
+
+$org_type_oval_text_colors: (
+  "environment":    $environment_text,
+  "health":         $health_text,
+  "religion":       $religion_text,
+  "human_rights":   $human_rights_text,
+  "community":      $community_text,
+  "animals":        $animals_text,
+  "education":      $education_text,
+  "international":  $international_text,
   "human_services": $human_services_text
 );
 
-@each $key, $color in $org_type_colors {
-  .bg_color_#{$key} {
-    background-color: $color;
-  }
-}
 
 @each $key, $color in $org_type_colors {
   .color_#{$key} {
@@ -57,8 +54,32 @@ $org_type_text_colors: (
   }
 }
 
-@each $keyy, $color in $org_type_text_colors {
-  .text_#{$keyy} {
+@each $key, $color in $org_type_colors {
+  .bg_color_#{$key} {
+    background-color: $color;
+  }
+}
+
+// for deciding what text color goes into org-type-oval. 
+@each $key, $color in $org_type_oval_text_colors {
+  .org-type-oval[data-org-type=#{$key}] {
     color: $color;
   }
 }
+
+.org-type-oval {
+  height: 24px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+
+

@@ -1,5 +1,6 @@
 
-  .philosophy > .philosophy-text {
+.profile-section[data-title="philosophy"] {
+  .philosophy-text {
     font-family: Roboto;
     font-size: 16px;
     font-weight: normal;
@@ -9,3 +10,4 @@
     letter-spacing: normal;
     color: var(--text-body);
   }
+}

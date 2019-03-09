@@ -3,29 +3,30 @@
   padding-right: 5%;
 }
 
-.profile-body {
+.profile-sections {
   display: grid;
   grid-gap: 70px;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 150px auto auto; 
   padding-top: 100px; //as place holder. will not be needed when profile header is put in place. 
-  .badges {
+  
+  [data-title="badges"] {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
-  .donations-by-causes {
+  [data-title="donations-by-causes"] {
     grid-column: 4 / 8;
     grid-row: 1 / 2;
   }
-  .past-donations {
+  [data-title="past-donations"] {
     grid-column: 8 / 11;
     grid-row: 1 / 4;
   }
-  .philosophy {
+  [data-title="philosophy"] {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
-  .favorite-organizations {
+  [data-title="favorite-organizations"] {
     grid-column: 4 / 8;
     grid-row: 2 / 4;
   }
@@ -38,23 +39,23 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 150px auto auto; 
     
-    .badges {
+    [data-title="badges"] {
       grid-column: 1 / 4;
       grid-row: 1 / 2;
     }
-    .donations-by-causes {
+    [data-title="donations-by-causes"] {
       grid-column: 4 / 8;
       grid-row: 1 / 2;
     }
-    .philosophy {
+    [data-title="philosophy"] {
       grid-column: 1 / 4;
       grid-row: 2 / 3;
     }
-    .favorite-organizations {
+    [data-title="favorite-organizations"] {
       grid-column: 4 / 8;
       grid-row: 2 / 4;
     }
-    .past-donations {
+    [data-title="past-donations"] {
       grid-column: 1 / 4;
       grid-row: 3 / 4;
     }
@@ -63,52 +64,46 @@
   @media all and (max-width: 650px){
     display: flex;
     flex-direction: column;
-    // padding:5px;
-    .badges { 
+    
+    [data-title="badges"] { 
       order: 0; 
       margin: 5px;
     }
-    .philosophy { 
+    [data-title="philosophy"] { 
       order: 1;
       margin: 5px; 
     }
-    .donations-by-causes { 
+    [data-title="donations-by-causes"] { 
       order: 2; 
       margin: 5px;
     }
-    .past-donations { 
+    [data-title="past-donations"] { 
       order: 3; 
       margin: 5px;
     }
-    .favorite-organizations { 
+    [data-title="favorite-organizations"] { 
       order: 4; 
-      margin: 5px;
-    }
-    .brand-text { 
-      order: 5; 
       margin: 5px;
     }
   }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
-.profile-section {
-  .section-title{
-    width: 296px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: 1px;
-    color: var(--text-subtitle);
-  }
+.profile-section__title{
+  width: 296px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  color: var(--text-subtitle);
+}
 
-  .divider {
-    border-top: solid 1.5px var(--element-toned-down);
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
+.profile-section__divider {
+  border-top: solid 1.5px var(--element-toned-down);
+  margin-top: 8px;
+  margin-bottom: 12px;
 }

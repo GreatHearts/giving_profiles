@@ -1,11 +1,11 @@
-.profile-body .badges {
+.profile-section[data-title="badges"] {
   .badges-row{
-    // display: flex;
-    justify-content: space-between;
     .donation-badge {
       font-size: 26px;
-      margin-left: 10px; //** note: think of better way to achieve spacing. 
-      margin-right: 10px;//** 
+      margin-right: 8%;//** 
+      &:last-child {
+        margin-right: 0px;
+      }
     }
     margin-bottom: 10px; //**
   }

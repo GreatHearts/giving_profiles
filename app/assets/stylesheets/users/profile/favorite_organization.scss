@@ -1,18 +1,18 @@
-.profile-section.favorite-organizations {
+.profile-section[data-title="favorite-organizations"] {
   .user-fav-orgs {
     .favorite-organization {
       margin-bottom: 20px;
       display: flex;
       flex-direction: row;
-      .org-logo{
+      .fav_org__logo {
         margin-right: 15px;
       }
-      .org-content{
+      .fav_org__content {
         flex-grow: 2;
-        .organization-header {
+        .fav_org__header {
           display: flex;
           justify-content: space-between;
-          .organization-name{
+          .fav_org__name{
             font-family: Roboto;
             font-size: 18px;
             font-weight: bold;
@@ -23,21 +23,8 @@
             color: var(--text-title);
             margin-bottom: 5px;
           }
-          .org-type{
-            height: 24px;
-            font-family: Roboto;
-            font-size: 12px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            border-radius: 12px;
-            padding: 5px 10px;
-            margin-left: 5px;
-          }
         }
-        .fav-org-text {
+        .fav-org__description {
           font-family: Roboto;
           font-size: 14px;
           font-weight: normal;

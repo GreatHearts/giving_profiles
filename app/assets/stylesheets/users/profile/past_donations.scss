@@ -1,10 +1,11 @@
-.profile-section.past-donations {
-  .mini-user-profile-info{
+.profile-section[data-title="past-donations"] {
+
+  .mini-user-profile-info {
     margin-bottom: 15px;
-    .mini-profile-pic{
+    .mini-user-profile-info__pic {
       margin-right: 10px;
     }
-    .user-name{
+    .mini-user-profile-info__name {
       font-family: Roboto;
       font-size: 18px;
       font-weight: bold;
@@ -16,7 +17,7 @@
     }
   }
 
-  .search-my-past-donations{
+  .past-donations-search {
     margin-bottom: 15px;
     font-family: Roboto;
     font-size: 14px;
@@ -28,15 +29,15 @@
     color: var(--text-body);
 
   }
-  .donations {
-    .past-donation {
+  .past-donations-cards {
+    .past-donation-card {
       margin-bottom: 10px;
       padding: 15px;
       padding-right: 20px;
       border-radius: 12px;
       box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
 
-      .past-donation-header {
+      .past-donation-card__header {
         display: flex;
         justify-content: space-between;
         .donated-to-text {
@@ -49,13 +50,13 @@
           letter-spacing: normal;
           color: var(--text-body);
         }
-        .past-donation-menu{
+        .past-donation-card__menu {
           color: var(--text-toned-down);
         }
       }
 
 
-      .donated-organization {
+      .past-donation-card__organization {
         font-family: Roboto;
         font-size: 14px;
         font-weight: bold;
@@ -66,7 +67,7 @@
         color: var(--text-body);
       }
 
-      .past-donation-time {
+      .past-donation-card__time {
         font-family: Roboto;
         font-size: 12px;
         font-weight: normal;
@@ -81,7 +82,7 @@
   }
 
   .scroll-to-see-more {
-    .scroll-text {
+    .scroll-to-see-more__text {
       font-family: Roboto;
       font-size: 12px;
       font-weight: normal;
@@ -91,7 +92,7 @@
       letter-spacing: normal;
       color: var(--text-body);
     }
-    .scroll-icon {
+    .scroll-to-see-more__icon {
       color: var(--text-toned-down);
       margin-right: 15px;
     }
