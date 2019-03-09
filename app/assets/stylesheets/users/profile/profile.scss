@@ -1,9 +1,14 @@
+.user-profile {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .profile-body {
   display: grid;
   grid-gap: 70px;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 150px auto auto; //this is okay for now. Can adjust later if needed. 
-  padding-top: 100px; //for testing. May not be needed later. 
+  grid-template-rows: 150px auto auto; 
+  padding-top: 100px; //as place holder. will not be needed when profile header is put in place. 
   .badges {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -25,17 +30,66 @@
     grid-row: 2 / 4;
   }
 
-  //attempt to do responsive design.
-  @media all and (max-width: 600px){ //still playing around with this. okay for now. pending further specs and exploring.
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Still experimenting with these responsive designs. Will do more exploraion later. 
+  @media all and (max-width: 900px){
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 150px auto auto; 
+    
+    .badges {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+    }
+    .donations-by-causes {
+      grid-column: 4 / 8;
+      grid-row: 1 / 2;
+    }
+    .philosophy {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+    }
+    .favorite-organizations {
+      grid-column: 4 / 8;
+      grid-row: 2 / 4;
+    }
+    .past-donations {
+      grid-column: 1 / 4;
+      grid-row: 3 / 4;
+    }
+  }
+
+  @media all and (max-width: 650px){
     display: flex;
     flex-direction: column;
-    .badges { order: 0; }
-    .philosophy { order: 1; }
-    .donations-by-causes { order: 2; }
-    .past-donations { order: 3; }
-    .favorite-organizations { order: 4; }
-    .brand-text { order: 5; }
+    // padding:5px;
+    .badges { 
+      order: 0; 
+      margin: 5px;
+    }
+    .philosophy { 
+      order: 1;
+      margin: 5px; 
+    }
+    .donations-by-causes { 
+      order: 2; 
+      margin: 5px;
+    }
+    .past-donations { 
+      order: 3; 
+      margin: 5px;
+    }
+    .favorite-organizations { 
+      order: 4; 
+      margin: 5px;
+    }
+    .brand-text { 
+      order: 5; 
+      margin: 5px;
+    }
   }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
 .profile-section {
@@ -57,9 +111,4 @@
     margin-top: 5px;
     margin-bottom: 10px;
   }
-}
-
-// this is just for testing. Will get rid of this later. 
-.profile-content-container > div {
-  // background-color: #EAEAEA;
 }

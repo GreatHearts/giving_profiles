@@ -1,6 +1,6 @@
 class Organization < ApplicationRecord
   enum org_type: {
-    community_development: 'community_development', 
+    community: 'community', 
     education: 'education', 
     religion: 'religion', 
     animals: 'animals', 

@@ -5,7 +5,7 @@ $environment: #99cc66;
 $health: #7755cc;
 $religion: #F65633;
 $human_rights: #4267b2;
-$community_development: #ff88aa;
+$community: #ff88aa;
 $animals: #22aa99;
 $education: #1199ee;
 $international: #f3c937;
@@ -15,7 +15,7 @@ $environment_text: var(--theme-secondary);
 $health_text: var(--text-light);
 $religion_text: var(--text-light);
 $human_rights_text: var(--text-light);
-$community_development_text: var(--text-light);
+$community_text: var(--text-light);
 $animals_text: var(--text-light);
 $education_text: var(--text-light);
 $international_text: var(--theme-secondary);
@@ -26,7 +26,7 @@ $org_type_colors: (
   "health": $health,
   "religion": $religion,
   "human_rights": $human_rights,
-  "community_development": $community_development,
+  "community": $community,
   "animals": $animals,
   "education": $education,
   "international": $international,
@@ -38,7 +38,7 @@ $org_type_text_colors: (
   "health": $health_text,
   "religion": $religion_text,
   "human_rights": $human_rights_text,
-  "community_development": $community_development_text,
+  "community": $community_text,
   "animals": $animals_text,
   "education": $education_text,
   "international": $international_text,
