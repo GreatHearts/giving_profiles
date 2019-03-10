@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe User, type: :model do
-  subject { User.new(name: "Foo Bar") }
+  subject { users(:bob_user) }
 
   it { should define_enum_for(:favorite_cause).backed_by_column_of_type(:string) }
 
