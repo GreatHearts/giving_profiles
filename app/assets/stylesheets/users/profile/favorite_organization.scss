@@ -20,7 +20,7 @@
             font-stretch: normal;
             line-height: 1.33;
             letter-spacing: 0.2px;
-            color: var(--text-title);
+            color: $text-title;
             margin-bottom: 5px;
           }
         }
@@ -32,7 +32,7 @@
           font-stretch: normal;
           line-height: 1.14;
           letter-spacing: normal;
-          color: var(--text-body);
+          color: $text-body;
         }
       }
     }

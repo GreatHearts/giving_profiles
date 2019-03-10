@@ -1,50 +1,25 @@
-
-// NOTE: THESE ORG TYPE BG AND TEXT COLORS AREN'T ACCURATE. needs to be reviewed. 
-$animals:        #22aa99;
-$community:      #ff88aa;
-$education:      #1199ee;
-$environment:    #99cc66;
-$health:         #7755cc;
-$human_rights:   #4267b2;
-$human_services: #EA958C;
-$international:  #f3c937;
-$religion:       #F65633;
-
 $org_type_colors: (
-  "environment":    $environment,
-  "health":         $health,
-  "religion":       $religion,
-  "human_rights":   $human_rights,
-  "community":      $community,
-  "animals":        $animals,
-  "education":      $education,
-  "international":  $international,
-  "human_services": $human_services
+  "environment":    $color-environment,
+  "health":         $color-health,
+  "religion":       $color-religion,
+  "human_rights":   $color-human_rights,
+  "community":      $color-community,
+  "animals":        $color-animals,
+  "education":      $color-education,
+  "international":  $color-international,
+  "human_services": $color-human_services
 );
 
-
-
-// for deciding what text color goes into org-type-oval. 
-$environment_text:    var(--theme-secondary);
-$health_text:         var(--text-light);
-$religion_text:       var(--text-light);
-$human_rights_text:   var(--text-light);
-$community_text:      var(--text-light);
-$animals_text:        var(--text-light);
-$education_text:      var(--text-light);
-$international_text:  var(--theme-secondary);
-$human_services_text: var(--theme-secondary);
-
 $org_type_oval_text_colors: (
-  "environment":    $environment_text,
-  "health":         $health_text,
-  "religion":       $religion_text,
-  "human_rights":   $human_rights_text,
-  "community":      $community_text,
-  "animals":        $animals_text,
-  "education":      $education_text,
-  "international":  $international_text,
-  "human_services": $human_services_text
+  "environment":    $theme-secondary,
+  "health":         $text-light,
+  "religion":       $text-light,
+  "human_rights":   $text-light,
+  "community":      $text-light,
+  "animals":        $text-light,
+  "education":      $text-light,
+  "international":  $theme-secondary,
+  "human_services": $theme-secondary
 );
 
 

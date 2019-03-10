@@ -13,7 +13,7 @@
       font-stretch: normal;
       line-height: 1.33;
       letter-spacing: 0.2px;
-      color: var(--text-title);
+      color: $text-title;
     }
   }
 
@@ -26,7 +26,7 @@
     font-stretch: normal;
     line-height: 1.14;
     letter-spacing: normal;
-    color: var(--text-body);
+    color: $text-body;
 
   }
   .past-donations-cards {
@@ -48,10 +48,10 @@
           font-stretch: normal;
           line-height: 1.14;
           letter-spacing: normal;
-          color: var(--text-body);
+          color: $text-body;
         }
         .past-donation-card__menu {
-          color: var(--text-toned-down);
+          color: $text-toned-down;
         }
       }
 
@@ -64,7 +64,7 @@
         font-stretch: normal;
         line-height: 1.14;
         letter-spacing: normal;
-        color: var(--text-body);
+        color: $text-body;
       }
 
       .past-donation-card__time {
@@ -75,7 +75,7 @@
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: var(--text-toned-down);
+        color: $text-toned-down;
         margin-top: 20px;
       }
     }
@@ -90,10 +90,10 @@
       font-stretch: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: var(--text-body);
+      color: $text-body;
     }
     .scroll-to-see-more__icon {
-      color: var(--text-toned-down);
+      color: $text-toned-down;
       margin-right: 15px;
     }
   }

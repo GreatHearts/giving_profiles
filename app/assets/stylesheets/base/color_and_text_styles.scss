@@ -1,22 +1,36 @@
 /* Color palette */
-:root {
-  --theme-primary: #f3c937;
-  --theme-secondary: #333333;
-  --text-title: #000000;
-  --text-subtitle: #aaaaaa;
-  --text-body: #555555;
-  --element-toned-down: #bbbbbb;
-  --text-toned-down: #777777;
-  --text-light: #ffffff;
-  --n7755-cc: #7755cc;
-  --facebook-blue: #4267b2;
-  --error: #ee4444;
-  --tealish: #22aa99;
-  --rosa: #ff88aa;
-  --light-moss-green: #99cc66;
-  --n1199-ee: #1199ee;
-  --light-hover: rgba(0, 0, 0, 0.1);
-}
+$gp-yellow: #f3c937;
+$gp-red: #ee4444;
+$gp-teal: #22aa99;
+$gp-purple: #7755cc;
+$gp-pink: #ff88aa;
+$gp-light-pink: #EA958C;
+$gp-green: #99cc66;
+$gp-blue: #1199ee;
+$gp-blue2: #4267b2;
+$gp-orange: #F65633;
+
+$theme-primary: $gp-yellow;
+$theme-secondary: #333333;
+$text-title: #000000;
+$text-subtitle: #aaaaaa;
+$text-body: #555555;
+$element-toned-down: #bbbbbb;
+$text-toned-down: #777777;
+$text-light: #ffffff;
+$facebook-blue: #4267b2;
+$error: $gp-red;
+$light-hover: rgba(0, 0, 0, 0.1);
+
+$color-animals:        $gp-teal; //unconfirmed
+$color-community:      $gp-pink;
+$color-education:      $gp-blue;
+$color-environment:    $gp-green;
+$color-health:         $gp-purple;
+$color-human_rights:   $gp-blue2; //unconfirmed
+$color-human_services: $gp-light-pink; //unconfirmed
+$color-international:  $gp-yellow;
+$color-religion:       $gp-orange; //unconfirmed
 
 /* Text styles */
 title {
@@ -27,7 +41,7 @@ title {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 0.2px;
-  color: var(--text-title);
+  color: $text-title;
 }
 .icon-dark {
   font-family: FontAwesome;
@@ -38,7 +52,7 @@ title {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .icon-disabled {
   font-family: FontAwesome;
@@ -49,7 +63,7 @@ title {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--element-toned-down);
+  color: $element-toned-down;
 }
 .icon-light {
   font-family: FontAwesome;
@@ -60,7 +74,7 @@ title {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-light);
+  color: $text-light;
 }
 .icon-toned-down {
   font-family: FontAwesome;
@@ -71,7 +85,7 @@ title {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .heading {
   font-family: Roboto;
@@ -81,7 +95,7 @@ title {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 0.2px;
-  color: var(--text-title);
+  color: $text-title;
 }
 .title-section {
   font-family: Roboto;
@@ -91,7 +105,7 @@ title {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: 1px;
-  color: var(--text-subtitle);
+  color: $text-subtitle;
 }
 .button-dark {
   font-family: Roboto;
@@ -102,7 +116,7 @@ title {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .button-light {
   font-family: Roboto;
@@ -113,7 +127,7 @@ title {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-light);
+  color: $text-light;
 }
 body {
   font-family: Roboto;
@@ -123,7 +137,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--text-body);
+  color: $text-body;
 }
 .body-dark {
   font-family: Roboto;
@@ -133,7 +147,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .body-destructive {
   font-family: Roboto;
@@ -143,7 +157,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--error);
+  color: $error;
 }
 .body-emphasis {
   font-family: Roboto;
@@ -153,7 +167,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--text-title);
+  color: $text-title;
 }
 .body-light {
   font-family: Roboto;
@@ -163,7 +177,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--text-light);
+  color: $text-light;
 }
 .body-toned-down {
   font-family: Roboto;
@@ -173,7 +187,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .body-thin {
   font-family: Roboto;
@@ -183,7 +197,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .icon-medium-dark {
   font-family: FontAwesome;
@@ -194,7 +208,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .icon-medium-light {
   font-family: FontAwesome;
@@ -205,7 +219,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-light);
+  color: $text-light;
 }
 .icon-medium-toned-down {
   font-family: FontAwesome;
@@ -216,7 +230,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .body-medium-bold {
   font-family: Roboto;
@@ -226,7 +240,7 @@ body {
   font-stretch: normal;
   line-height: 1.14;
   letter-spacing: normal;
-  color: var(--text-body);
+  color: $text-body;
 }
 .body-medium-emphasis {
   font-family: Roboto;
@@ -236,7 +250,7 @@ body {
   font-stretch: normal;
   line-height: 1.14;
   letter-spacing: normal;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .heading-small {
   font-family: Roboto;
@@ -246,7 +260,7 @@ body {
   font-stretch: normal;
   line-height: 1.14;
   letter-spacing: 0.1px;
-  color: var(--text-title);
+  color: $text-title;
 }
 .body-medium {
   font-family: Roboto;
@@ -256,7 +270,7 @@ body {
   font-stretch: normal;
   line-height: 1.14;
   letter-spacing: normal;
-  color: var(--text-body);
+  color: $text-body;
 }
 .body-medium-toned-down {
   font-family: Roboto;
@@ -266,7 +280,7 @@ body {
   font-stretch: normal;
   line-height: 1.14;
   letter-spacing: normal;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .body-small-bold {
   font-family: Roboto;
@@ -276,7 +290,7 @@ body {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .body-small {
   font-family: Roboto;
@@ -286,7 +300,7 @@ body {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--text-body);
+  color: $text-body;
 }
 .body-small-center {
   font-family: Roboto;
@@ -297,7 +311,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-body);
+  color: $text-body;
 }
 .tag {
   font-family: Roboto;
@@ -307,7 +321,7 @@ body {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .tag-center {
   font-family: Roboto;
@@ -318,7 +332,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-toned-down);
+  color: $text-toned-down;
 }
 .tag-dark {
   font-family: Roboto;
@@ -329,7 +343,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 .tag-light {
   font-family: Roboto;
@@ -340,5 +354,5 @@ body {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: var(--text-light);
+  color: $text-light;
 }
