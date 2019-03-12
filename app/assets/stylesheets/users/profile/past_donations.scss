@@ -1,0 +1,100 @@
+.profile-section[data-title="past-donations"] {
+
+  .mini-user-profile-info {
+    margin-bottom: 15px;
+    .mini-user-profile-info__pic {
+      margin-right: 10px;
+    }
+    .mini-user-profile-info__name {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.2px;
+      color: $text-title;
+    }
+  }
+
+  .past-donations-search {
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: $text-body;
+
+  }
+  .past-donations-cards {
+    .past-donation-card {
+      margin-bottom: 10px;
+      padding: 15px;
+      padding-right: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+
+      .past-donation-card__header {
+        display: flex;
+        justify-content: space-between;
+        .donated-to-text {
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.14;
+          letter-spacing: normal;
+          color: $text-body;
+        }
+        .past-donation-card__menu {
+          color: $text-toned-down;
+        }
+      }
+
+
+      .past-donation-card__organization {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: $text-body;
+      }
+
+      .past-donation-card__time {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $text-toned-down;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .scroll-to-see-more {
+    .scroll-to-see-more__text {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $text-body;
+    }
+    .scroll-to-see-more__icon {
+      color: $text-toned-down;
+      margin-right: 15px;
+    }
+  }
+}

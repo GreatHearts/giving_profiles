@@ -1,6 +1,6 @@
 .page-header {
   height: 60px;
-  background-color: var(--theme-primary);
+  background-color: $theme-primary;
   display: flex;
 }
 
@@ -19,12 +19,12 @@
 }
 .logo > a {
   text-decoration: none;
-  color: var(--theme-secondary);
+  color: $theme-secondary;
 }
 
 .header-search {
   font-family: Roboto, Helvetica, sans-serif; 
-  color: var(--text-body);
+  color: $text-body;
   margin-left: 36px;
   margin-top: 20px;
 }
