@@ -1,0 +1,60 @@
+$org_type_colors: (
+  "environment":    $color-environment,
+  "health":         $color-health,
+  "religion":       $color-religion,
+  "human_rights":   $color-human_rights,
+  "community":      $color-community,
+  "animals":        $color-animals,
+  "education":      $color-education,
+  "international":  $color-international,
+  "human_services": $color-human_services
+);
+
+$org_type_oval_text_colors: (
+  "environment":    $theme-secondary,
+  "health":         $text-light,
+  "religion":       $text-light,
+  "human_rights":   $text-light,
+  "community":      $text-light,
+  "animals":        $text-light,
+  "education":      $text-light,
+  "international":  $theme-secondary,
+  "human_services": $theme-secondary
+);
+
+
+@each $key, $color in $org_type_colors {
+  .color_#{$key} {
+    color: $color;
+  }
+}
+
+@each $key, $color in $org_type_colors {
+  .bg_color_#{$key} {
+    background-color: $color;
+  }
+}
+
+// for deciding what text color goes into org-type-oval. 
+@each $key, $color in $org_type_oval_text_colors {
+  .org-type-oval[data-org-type=#{$key}] {
+    color: $color;
+  }
+}
+
+.org-type-oval {
+  height: 24px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+
+

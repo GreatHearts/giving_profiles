@@ -1,0 +1,10 @@
+<%= render "users/profile_sections/profile_section", title: "BADGES"  do %>
+  <div class="badges-row">
+    <% @user.badges[0..5].compact.each do |badge| %>
+      <%= fa_icon "certificate", class: "color_#{badge} donation-badge" %>
+    <% end %>
+  </div>
+  <% if @user.badges.size > 6 %>
+    <div class="remaining-badges"><%= "and #{ @badges.size - 6 } other #{"badge".pluralize(@user.badges.size - 6)}..."%></div>
+  <% end%>
+<% end %>

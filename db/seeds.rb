@@ -38,7 +38,9 @@ ActiveRecord::Base.transaction do
   
   ##Organizations
   orgs = YAML::load_file(Rails.root.join("db/seed_files/orgs.yml"))
-  orgs.each{|org| Organization.find_or_create_by!(name: org[:name], fb_url: org[:fb_url])}
+
+  ## NOTE: Org type is being randomly assigned for now until we get a specific mapping. 
+  orgs.each{ |org| Organization.create_with(org_type: Organization::org_types.keys.sample).find_or_create_by!(name: org[:name], fb_url: org[:fb_url]) }
 
   if Rails.env == "development"
     ##Users. 
