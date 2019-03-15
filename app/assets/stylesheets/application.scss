@@ -12,5 +12,23 @@
  *
  */
  @import "bootstrap";
- @import url("layouts/user_header.scss");
- @import url("pages/home.scss");
+
+ // Base CSS
+ @import "base/normalize";
+ @import "font-awesome";
+ @import "helpers/variables";
+ @import "base/color_and_text_styles";
+ @import "base/org_types";
+
+ // Layouts CSS
+ @import "layouts/application";
+ @import "layouts/footer";
+ @import "layouts/header";
+ @import "layouts/user_header";
+
+ // Pages CSS
+ @import "pages/home";
+
+
+ // User CSS
+ @import "users";
