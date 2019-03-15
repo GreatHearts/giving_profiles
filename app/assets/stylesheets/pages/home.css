@@ -32,3 +32,82 @@ img {
 ion-icon {
   font-size: 20px;
 }
+
+/* about page */
+
+.about-header h1 {
+  width: 1024px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: var(--text-title);
+  padding-bottom: 25px;
+}
+
+.about-text p {
+  width: 1024px;
+  height: 120px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #555555;
+  font-size: 18px;
+  font-family: Roboto;
+}
+
+.our-team-header h2 {
+  margin-left: 30%;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 1024px;
+  height: 24px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: var(--text-title);
+  padding-bottom: 25px;
+}
+
+.our-team-name h1 {
+  float: left;
+  width: 1024px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: var(--text-title);
+  padding-bottom: 25px;
+}
+
+.our-team-description p {
+  float: left;
+  width: 1024px;
+  height: 120px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #555555;
+  font-size: 18px;
+  font-family: Roboto;
+}
+
+hr {
+  width: 100%;
+  margin-left: 35px;
+}

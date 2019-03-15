@@ -1,0 +1,25 @@
+.user-profile-buttons button {
+  float: right;
+}
+
+#user-profile.container {
+  padding-top: 5%;
+}
+
+.user-profile-text p {
+  display:inline-block;
+  margin-left: 10%;
+}
+
+.user-profile-header h1 {
+  display:inline-block;
+  margin-left: 10%;
+  font-size: 24px;
+}
+
+.user-profile-image img {
+  float: left;
+  height: 104px;
+  width: 104px;
+  object-fit: cover;
+}
