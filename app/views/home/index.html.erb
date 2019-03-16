@@ -8,7 +8,14 @@
               <h5 class="card-title mb-2">Share your donations</h5>
               <p class="card-text">Share your donations with your friends and the community.</p>
               <p class="card-text">See what charitable causes your friends care about.</p>
-              <a href="#" class="w-100 p-3 btn btn-sm active align-items-end" role="button" aria-pressed="true"><%= fa_icon "facebook-square", class: "float-left fa-2x", text: "Login with Facebook" %></a>
+              <a href="#" role="button" aria-pressed="true">
+                <div class="btn btn-lg w-100 facebook-button">
+                <div class="row row align-items-center">
+                  <div class="col-2"><%= fa_icon "facebook-square", class: "facebook-icon fa-2x" %></div>
+                  <div class="col">Login With Facebook</div>
+                </div>
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-sm ml-lg-auto">

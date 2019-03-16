@@ -36,21 +36,15 @@
       .fa-heart-o{
         color: white;
       }
-      .facebook-square{
-        float: left;
-        margin-bottom: 10px;
-      }
-      .btn-warning{
-        margin-top: 2%;
-        margin-bottom: 2%;
-      }
-      .btn-sm{
+      .facebook-icon{
         color: white;
-        height: 55px;
-        border-radius: 4px;
         background-color: $facebook-blue;
-        position: relative;
-        top: 70px;
+      }
+      .facebook-button{
+        height: 48px;
+        font-size: 1rem;
+        color: white;
+        background-color: $facebook-blue;
       }
     }
     small {
