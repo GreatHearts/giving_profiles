@@ -8,7 +8,7 @@
   grid-gap: 70px;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 150px auto auto; 
-  padding-top: 100px; //as place holder. will not be needed when profile header is put in place. 
+  padding-top: 20px;
   
   [data-title="badges"] {
     grid-column: 1 / 4;
