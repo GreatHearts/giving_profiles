@@ -31,5 +31,6 @@
 
 /config/database.yml
 .env
+.rspec
 
 /vendor/*

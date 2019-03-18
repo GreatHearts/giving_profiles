@@ -1,0 +1,26 @@
+<%= render "users/profile_sections/profile_section", title: "PAST DONATIONS"  do %>
+  
+  <div class ="mini-user-profile-info">
+    <%= fa_icon "user-circle 2x", class: "mini-user-profile-info__pic" %> <!-- Place holder for now. -->
+    <span class="mini-user-profile-info__pic"><%= @user.name %></span>
+  </div>
+
+
+  <% if @user.donations.present? %>
+    <div class="past-donations-search">
+      <%= fa_icon "search", text: "Search my past donations" %> <!-- Place holder for now. -->
+    </div>
+    
+    <div class="past-donations-cards">
+      <% @user.donations[0..2].compact.each do |donation| %> <!-- Currerntly just showing first 3 for now until we decide what to do. -->
+        <%= render "users/profile_sections/past_donation", donation: donation %>
+      <% end %>
+    </div>
+
+    <div class="scroll-to-see-more"> <!-- Place holder for now. -->
+      <%= fa_icon "arrow-down", class: "scroll-to-see-more__icon" %>
+      <span class="scroll-to-see-more__text">Scroll down to see more</span>
+    </div>
+  <% end %>
+
+<% end %>

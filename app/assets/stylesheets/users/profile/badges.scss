@@ -1,0 +1,22 @@
+.profile-section[data-title="badges"] {
+  .badges-row{
+    .donation-badge {
+      font-size: 26px;
+      margin-right: 8%;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    margin-bottom: 10px;
+  }
+  .remaining-badges {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: $text-body;
+  }
+}

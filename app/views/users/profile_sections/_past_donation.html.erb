@@ -1,0 +1,11 @@
+<div class="card past-donation-card">
+  <div class="past-donation-card__header">
+    <div class="donated-to-text"> Donated to </div>
+    <a href="#" class="past-donation-card__menu"><%= fa_icon "ellipsis-v"%></a> <!-- Place holder for now. -->
+  </div>
+
+  <div class="past-donation-card__organization">
+    <%= donation.organization.name %>
+  </div>
+  <div class="past-donation-card__time"><%= donation.created_at.strftime("%I:%M %p - %b %e, %Y") %></div>
+</div>

@@ -1,14 +1,14 @@
 class Organization < ApplicationRecord
   enum org_type: {
-    community_development: 'community_development', 
-    education: 'education', 
-    religion: 'religion', 
-    animals: 'animals', 
-    health: 'health', 
-    human_rights: 'human_rights', 
+    animals:        'animals', 
+    community:      'community', 
+    education:      'education', 
+    environment:    'environment',
+    health:         'health', 
+    human_rights:   'human_rights', 
     human_services: 'human_services', 
-    international: 'international', 
-    environment:'environment'
+    international:  'international', 
+    religion:       'religion' 
   }
 
   has_many :donations, dependent: :destroy
