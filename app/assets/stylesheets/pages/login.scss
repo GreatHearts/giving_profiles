@@ -1,0 +1,60 @@
+///login page styleing
+
+.login {
+  background: url("BackgroundImage.jpeg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+    .card {
+      border-radius: 12px;
+      width:100%;
+      @media(min-width:992px){
+        height: 376px;
+        min-width: 300px;
+        max-width: 348px;
+        max-width: 300px;
+        margin-right: 10vw;
+        margin-top: 5vw;
+      }
+      .card-title {
+        color: black;
+        font-family: 'Roboto-Black', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        }
+      .card-text {
+        letter-spacing: normal;
+        color: var(--text-body);
+        font-size: 18px;
+        }
+        @media(min-width:992px){
+          max-width: 348px;
+          margin-right: 10vw;
+        }
+
+      .fa-heart-o{
+        color: white;
+      }
+      .facebook-icon{
+        color: white;
+        background-color: $facebook-blue;
+      }
+      .facebook-button{
+        height: 48px;
+        font-size: 1rem;
+        color: white;
+        background-color: $facebook-blue;
+      }
+    }
+    small {
+      font-size: 10px;
+      margin: 10px 0 2% 5%;
+      margin-top: 20px;
+      float: right;
+        @media(min-width:992px){
+          margin-right: 120px;
+        }
+    }
+}
