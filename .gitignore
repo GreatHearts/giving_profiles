@@ -34,4 +34,4 @@
 .rspec
 
 #
-/vendor/*
+vendor/*

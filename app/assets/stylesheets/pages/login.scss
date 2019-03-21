@@ -5,6 +5,12 @@
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
+      .mt-lg-5 {
+        margin-top: ($spacer * 8) !important;
+      }
+      .mr-lg-5 {
+        margin-right: ($spacer * 8) !important;
+      }
     .card {
       border-radius: 12px;
       width:100%;
