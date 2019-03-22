@@ -35,6 +35,8 @@ ion-icon {
 
 /* about page */
 
+/* headers and text styling */
+
 .about-intro h1 {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 18px;
@@ -46,52 +48,7 @@ ion-icon {
   line-height: 1.33;
   letter-spacing: 0.3px;
   color: var(--text-title);
-}
-
- p.about-paragraph {
-  margin-top: 1%;
-  font-family: Roboto, Helvetica, sans-serif;
-  width: 1024px;
-  height: 120px;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  color: var(--text-body);
-  letter-spacing: 0.13px;
-}
-
-.row.about-intro{
-  margin-top: 2%;
-}
-
-.row.team-members{
-  margin-top: .5%;
-  margin-left: 8.5%;
-}
-
-.row.team-members-row-three{
-  margin-top: 2%;
-  margin-left: 28.5%;
-}
-
-.row.team-members-row-two{
-  margin-left: 25.5%;
-}
-
-h2.about-row-two-header{
-  width: 192px;
-  height: 24px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 1px;
-  color: var(--text-subtitle);
+  margin-left: 6.5%;
 }
 
 h1.about-names {
@@ -107,20 +64,100 @@ h1.about-names {
   color: var(--text-title);
 }
 
+h2.about-row-two-header{
+  width: 192px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  color: var(--text-subtitle);
+  margin-left: 1%;
+}
+
+ p.about-paragraph {
+  margin-top: 1%;
+  font-family: Roboto, Helvetica, sans-serif;
+  width: 1024px;
+  height: 120px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--text-body);
+  letter-spacing: 0.13px;
+  margin-left: 6.5%;
+}
+
+h1.about-names-section-two {
+  width: 192px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: var(--text-title);
+}
+
+h4.role-description {
+  margin-left: 9.5%;
+  width: 192px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+  color: var(--text-toned-down);
+  text-transform: uppercase;
+}
+
+/* rows */
+
+.row.about-intro{
+  margin-top: 1%;
+}
+
+.row.team-members{
+  margin-top: .5%;
+  margin-left: 5%;
+}
+
+.row.team-members-row-two{
+  margin-left: 22.5%;
+}
+
+.row.team-members-row-three{
+  margin-top: .80%;
+  margin-left: 27%;
+  margin-bottom: 5%;
+}
+
+/* lines */
+
 hr.line-one{
   width: 452px;
   height: 1px;
-  margin-left: 10%;
+  margin-left: 6.5%;
   color: #bbbbbb;
   background-color: #bbbbbb;
   margin-top: .25%;
 }
 
 hr.line-two{
-  width: 20%;
-  margin-left: 32.5%;
-}
-
-.row.line-two {
-  background-color: red;
+  width: 17%;
+  margin-left: 30.6%;
+  height: 1px;
+  color: #bbbbbb;
+  background-color: #bbbbbb;
 }
