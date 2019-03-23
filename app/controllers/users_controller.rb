@@ -1,10 +1,17 @@
 class UsersController < ApplicationController
   helper_method :cause_logos ##will delete when we get real org logos.
+  before_action :get_user, only: [:show, :edit]
 
   def show
-    @user = User.includes(donations: :organization, user_favorite_organizations: :organization).find(params[:id])
     @badges = @user.badges
     @donations_by_causes = @user.donations_by_causes
+  end
+
+  def edit 
+  end
+
+  def get_user
+    @user = User.includes(donations: :organization, user_favorite_organizations: :organization).find(params[:id])
   end
 
   def cause_logos
