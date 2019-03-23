@@ -1,2 +1,3 @@
 bob_user:
-  name: Bob Bobson
+  first_name: Bob
+  last_name:  Bobson

@@ -1,6 +1,8 @@
-def create_user(name)
+def create_user(first_name, last_name)
+  name = "#{first_name} #{last_name}"
   User.create_with(
-    name: name,
+    first_name: first_name,
+    last_name: last_name,
     nick_name: Faker::Internet.username(name, ""),
     email: Faker::Internet.email(name),
     favorite_cause: User::favorite_causes.keys.sample,
@@ -47,8 +49,8 @@ ActiveRecord::Base.transaction do
     num_users = 50 
     num_users.times do 
       begin
-        create_user(Faker::Name.name)
-      rescue
+        create_user(Faker::Name.first_name, Faker::Name.last_name)
+      rescue ActiveRecord::RecordInvalid => e
         retry if e.message.match /Email has already been taken/
       end
     end
