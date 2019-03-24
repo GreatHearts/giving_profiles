@@ -1,13 +1,22 @@
+
 <div class="user-profile-edit container-fluid">
-  <%= render "users/profile_edit/profile_pic" %>
+
+<%= form_for( @user , remote: true, html: {class: "user-profile-edit__form"} ) do |f| %>
+
+  <%= render "users/profile_edit/profile_pic", form: f %>
 
   <div class="editable-content">
-    <%= render "users/profile_edit/user_info" %>
-    <%= render "users/profile_edit/philosophy" %>
-    <%= render "users/profile_edit/donations_by_causes" %>
-    <%= render "users/profile_edit/favorite_organizations" %>
+    <%= render "users/profile_edit/user_info", form: f %>
+    <%= render "users/profile_edit/philosophy", form: f %>
+    <%= render "users/profile_edit/donations_by_causes", form: f %>
+    <%= render "users/profile_edit/favorite_organizations", form: f %>
   </div>  
 
-  <%= render "users/profile_edit/action_buttons" %>
+  <%= render "users/profile_edit/action_buttons", form: f %>
+
+
+<% end %>
+
+
 
 </div>

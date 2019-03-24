@@ -2,32 +2,44 @@
   margin-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
-  .profile-pic {
-    background-color: #EEEEEE;
-    flex-grow: 1;
-    // &__pic {
+  &__form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
-    // }
-    // &__change{
-
-    // }
-  }
-
-  .editable-content{
-    background-color: #EEEEEE;
-    flex-grow: 5;
-
-    .profile-section {
-      margin-top: 20px;
+    .form-control {
+      border: solid 1px $text-toned-down;
     }
-  }
 
-  .action-buttons{
-    background-color: #EEEEEE;
-    flex-grow: 2;
+    .label {
+      color: $text-toned-down;
+      font-size: 14px;
+    }
+
+    .profile-pic {
+      background-color: #EEEEEE;
+      flex-grow: 1;
+      // &__pic {
+
+      // }
+      // &__change{
+
+      // }
+    }
+
+    .editable-content{
+      background-color: #EEEEEE;
+      flex-grow: 5;
+
+      .profile-section {
+        margin-top: 20px;
+      }
+    }
+
+    .action-buttons{
+      background-color: #EEEEEE;
+      flex-grow: 2;
+    }
   }
 }
