@@ -1,12 +1,12 @@
 <% org_type = user_fav_org.organization.org_type %>
-<div class="favorite-organization fav_org">
+<div class="favorite-organization fav-org">
 
-  <%= fa_icon "#{cause_logos[org_type]} 2x", class: "fav_org__logo" %> <!-- place hoolder for now -->
+  <%= fa_icon "#{cause_logos[org_type]} 2x", class: "fav-org__logo" %> <!-- place hoolder for now -->
 
-  <div class="fav_org__content">
+  <div class="fav-org__content">
 
-    <div class="fav_org__header">
-      <div class="fav_org__name"><%= user_fav_org.organization.name %></div>
+    <div class="fav-org__header">
+      <div class="fav-org__name"><%= user_fav_org.organization.name %></div>
       <%= render "shared/org_type_oval", org_type: org_type %>
     </div>
 
