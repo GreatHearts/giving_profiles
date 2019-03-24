@@ -1,7 +1,7 @@
 .user-profile-edit {
   margin-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
 
   &__form {
     display: flex;
@@ -30,14 +30,14 @@
 
     .editable-content{
       flex-grow: 5;
-
+      margin-left: 5%;
+      margin-right: 5%;
       .profile-section {
         margin-top: 30px;
       }
     }
 
     .action-buttons{
-      background-color: #EEEEEE;
       flex-grow: 2;
     }
   }

@@ -1,4 +1,6 @@
   <div class="action-buttons">
-    <%= form.submit "Save Profile", class: "save-profile" %>
-    <%= button_tag "Cancel", :type => "button", class: "action-buttons__cancel" %>
+    <%= form.submit "Save Profile", class: "save-profile action-buttons__save" %>
+
+    <%= link_to "Cancel", @user, class: "action-buttons__cancel" %>
+
   </div>
