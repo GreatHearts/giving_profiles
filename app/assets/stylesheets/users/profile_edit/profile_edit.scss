@@ -1,7 +1,7 @@
 .user-profile-edit {
   margin-top: 5%;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
 
   &__form {
     display: flex;
@@ -18,18 +18,12 @@
     }
 
     .profile-pic {
-      background-color: #EEEEEE;
-      flex-grow: 1;
-      // &__pic {
-
-      // }
-      // &__change{
-
-      // }
+      align-self: flex-start;
+      // flex-grow: 1;
     }
 
     .editable-content{
-      flex-grow: 5;
+      flex-grow: 4;
       margin-left: 5%;
       margin-right: 5%;
       .profile-section {

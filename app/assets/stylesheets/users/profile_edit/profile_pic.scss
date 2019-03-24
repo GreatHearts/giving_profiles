@@ -1,0 +1,20 @@
+.user-profile-edit {
+  .profile-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__pic {
+      margin-bottom: 10px;
+      align-self: center;
+    }
+    &__change {
+      color: $text-light;
+      border-radius: 24px;
+      background-color: $theme-secondary;
+      font-size: 12px;
+      align-self: flex-start;
+      padding:5px 8px;
+      text-decoration: none;
+    }
+  }
+}
