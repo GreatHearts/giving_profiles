@@ -12,18 +12,22 @@
       </div>
     </div>
 
-    <nav class="user-header__options justify-content-end d-flex">
-      <a href="#">
-        <%= fa_icon "home" %>
-        <span>Home</span>
-      </a>
-      <a href="#" class="active">
-        <%= fa_icon "user-circle" %>
-        <span>Profile</span>
-      </a>
-      <a href="#">
-        <%= fa_icon "cog" %>
-        <span>Settings</span>
-      </a>
-    </nav>
+    <div class="user-header__nav-wrapper d-flex flex-column">
+      <nav class="user-header__options justify-content-end d-flex">
+        <a href="#">
+          <%= fa_icon "home" %>
+          <span>Home</span>
+        </a>
+        <a href="#" class="active">
+          <%= fa_icon "user-circle" %>
+          <span>Profile</span>
+        </a>
+        <a href="#">
+          <%= fa_icon "cog" %>
+          <span>Settings</span>
+        </a>
+      </nav>
+      <%= link_to "Edit Profile", edit_user_path(@user), class: "edit-profile-button align-self-end" %>
+    </div>
+
 </div>
