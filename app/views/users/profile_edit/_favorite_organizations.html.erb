@@ -1,5 +1,5 @@
 <%= render "users/profile_sections/profile_section", title: "FAVORITE ORGANIZATIONS"  do %>
-  <div class="user-fav-orgs">
+  <div class="user-fav-orgs-list">
     <% @user.user_favorite_organizations[0..3].each do |user_fav_org| %> <!-- show only 4 favorite organizations for now. -->
       <%= render "users/profile_edit/favorite_organization", user_fav_org: user_fav_org, form: form %>
     <% end %>

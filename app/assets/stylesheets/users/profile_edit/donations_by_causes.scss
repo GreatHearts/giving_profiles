@@ -1,7 +1,7 @@
 .user-profile-edit {
   .profile-section[data-title="donations-by-causes"] {
 
-    .donations-bars {
+    .donation-distribution {
       display: flex;
       margin-left: -40px;
       .right-arrow, .left-arrow {
@@ -15,7 +15,7 @@
       }
     }
 
-    .donation-bar-container {
+    .donation-bar {
       &__bar {
         height: 24px;
         margin-right: 3px;
@@ -28,6 +28,7 @@
       &__highest-bar {
         height: 8px;
         margin-bottom: 5px;
+        margin-right: 3px;
       }
     }
 

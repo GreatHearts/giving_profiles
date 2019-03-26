@@ -18,4 +18,11 @@ RSpec.describe User, type: :model do
   it { should validate_presence_of(:last_name) }
   it { should validate_uniqueness_of(:fb_id) }
   it { should validate_uniqueness_of(:email) }
+
+  describe "#name" do 
+    it "returns first_name plus last name with space in between." do 
+      user = users(:bob_user)
+      expect(user.name).to eql "Bob Bobson"
+    end
+  end
 end

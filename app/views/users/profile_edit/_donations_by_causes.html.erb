@@ -1,20 +1,14 @@
 <%= render "users/profile_sections/profile_section", title: "DONATIONS BY CAUSES"  do %>
-  <div class="donations-bars">
+  <div class="donation-distribution">
     <% if @donations_by_causes.present? %>
       <div class="left-arrow" >
         <%= fa_icon "arrow-circle-left" %>
       </div>
-
-      <% h_cause, h_percent = @donations_by_causes[0] %>
-      <%= render "users/profile_edit/donation_bar", cause: h_cause, percent: h_percent, highest: true %>
-
+      <%= render_first_donation_bar(donations_by_causes: @donations_by_causes) %>
       <div class="right-arrow" >
         <%= fa_icon "arrow-circle-right" %>
       </div>
-
-      <% @donations_by_causes[1..-1].each do |cause, percent| %>
-        <%= render "users/profile_edit/donation_bar", cause: cause, percent: percent, highest: false %>
-      <% end %> 
+      <% render_remaining_donation_bars(donations_by_causes: @donations_by_causes) %> 
     <% end %>   
   </div>
 
