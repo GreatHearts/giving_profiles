@@ -18,16 +18,18 @@
       margin-left: 6.5%;
     }
   }
-
-  .about-names {
-    font-size: 18px;
-    height: 24px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: 0.3px;
-    color: $text-title;
+  .about-information {
+    padding-left: 80px;
+    .about-names {
+      font-size: 18px;
+      height: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.3px;
+      color: $text-title;
+    }
   }
 
   .about-row-two-header{
@@ -58,35 +60,35 @@
     margin-bottom: 20px;
   }
 
-  .about-names-section-two {
-    width: 192px;
-    height: 24px;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: 0.2px;
-    color: $text-title;
+  .about-information-bottom {
+    padding-left: 80px;
+    .about-names-section-two {
+      width: 192px;
+      height: 24px;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.2px;
+      color: $text-title;
+    }
+    .role-description {
+      width: 192px;
+      height: 16px;
+      font-size: 12px;
+      font-weight: 900;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.6px;
+      color: $text-toned-down;
+      text-transform: uppercase;
+    }
+    .role-paragraph {
+      margin-left: 16px;
+    }
   }
-
-  .role-description {
-    width: 192px;
-    height: 16px;
-    font-size: 12px;
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: 0.6px;
-    color: $text-toned-down;
-    text-transform: uppercase;
-  }
-
-  .role-paragraph {
-    margin-left: 16px;
-  }
-
   /* rows */
 
   .row.team-members{
