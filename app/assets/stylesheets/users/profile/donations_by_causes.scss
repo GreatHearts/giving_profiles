@@ -1,39 +1,41 @@
-.profile-section[data-title="donations-by-causes"] {
+.user-profile {
+  .profile-section[data-title="donations-by-causes"] {
 
-  .donations-bars {
-    display: grid;
-    grid-template-rows: 24px 16px 16px;
-    grid-gap: 3px;
-  }
+    .donations-bars {
+      display: grid;
+      grid-template-rows: 24px 16px 16px;
+      grid-gap: 3px;
+    }
 
-  .donation-cause-text, .donation-percent {
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $text-body;
-  }
+    .donation-cause-text, .donation-percent {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $text-body;
+    }
 
-  .highest-donation-bar {
-    height: 8px;
-    margin-bottom: 5px;
-  }
+    .highest-donation-bar {
+      height: 8px;
+      margin-bottom: 5px;
+    }
 
-  .bg_color_others {
-    background-color: #abc8cc;
-  }
+    .bg_color_others {
+      background-color: #abc8cc;
+    }
 
-  .reason-for-giving {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.14;
-    letter-spacing: normal;
-    color: $text-body;
+    .reason-for-giving {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      color: $text-body;
+    }
   }
 }

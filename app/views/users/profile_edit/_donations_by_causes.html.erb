@@ -1,3 +1,26 @@
 <%= render "users/profile_sections/profile_section", title: "DONATIONS BY CAUSES"  do %>
-  Donations by causes
+  <div class="donations-bars">
+
+    <div class="left-arrow" >
+      <%= fa_icon "arrow-circle-left" %>
+    </div>
+
+    <% h_cause, h_percent = @donations_by_causes[0] if @donations_by_causes.present? %>
+    <%= render "users/profile_edit/donation_bar", cause: h_cause, percent: h_percent, highest: true %>
+
+    <div class="right-arrow" >
+      <%= fa_icon "arrow-circle-right" %>
+    </div>
+
+    <% @donations_by_causes[1..-1].each do |cause, percent| %>
+      <%= render "users/profile_edit/donation_bar", cause: cause, percent: percent, highest: false %>
+    <% end %>    
+
+  </div>
+
+  <% if @donations_by_causes.present? %>
+    <%= form.text_area :favorite_cause_description, class: "form-control fav-cause-desc", placeholder: "When I give, I often give to..." %>
+  <% end %>
+
 <% end %>
+

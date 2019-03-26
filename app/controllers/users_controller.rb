@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
   def edit 
+    @donations_by_causes = @user.donations_by_causes
   end
 
   def get_user
