@@ -14,7 +14,7 @@
     .card {
       border-radius: 12px;
       width:100%;
-      @media(min-width:992px){
+      @include media-breakpoint-up(lg){
         height: 376px;
         min-width: 300px;
         max-width: 348px;
@@ -35,7 +35,7 @@
         color: var(--text-body);
         font-size: 18px;
         }
-        @media(min-width:992px){
+        @include media-breakpoint-up(lg){
           max-width: 348px;
           margin-right: 10vw;
         }
@@ -59,7 +59,7 @@
       margin: 10px 0 2% 5%;
       margin-top: 20px;
       float: right;
-        @media(min-width:992px){
+        @include media-breakpoint-up(lg){
           margin-right: 120px;
         }
     }
