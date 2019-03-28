@@ -5,6 +5,9 @@
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
+ top: 0;
+ bottom: 0;
+ height: 100vh;
       .mt-lg-5 {
         margin-top: ($spacer * 8) !important;
       }
