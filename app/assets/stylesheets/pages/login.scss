@@ -5,25 +5,23 @@
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
+ background-color: $theme-primary;
  top: 0;
  bottom: 0;
  height: 100vh;
-      .mt-lg-5 {
-        margin-top: ($spacer * 8) !important;
-      }
-      .mr-lg-5 {
-        margin-right: ($spacer * 8) !important;
-      }
+
     .card {
+      margin-top: 80px;
+      margin-right: 20px;
+      height: 376px;
       border-radius: 12px;
       width:100%;
       @include media-breakpoint-up(lg){
-        height: 376px;
         min-width: 300px;
         max-width: 348px;
         max-width: 300px;
         margin-right: 10vw;
-        margin-top: 5vw;
+        margin-top: 100px;
       }
       .card-title {
         color: black;
