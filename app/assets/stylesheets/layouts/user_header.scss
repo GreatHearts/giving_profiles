@@ -1,0 +1,79 @@
+.user-header {
+  padding-top: 40px;
+
+  &__image {
+    img {
+      float: left;
+      height: 104px;
+      width: 104px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    margin-left: 16px;
+  }
+
+  &__name {
+    color: $text-title;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  &__location {
+    color: $text-toned-down;
+    margin-bottom: 4px;
+  }
+
+  &__social-networks {
+    a {
+      display: inline-block;
+      color: $theme-secondary;
+      font-size: 24px;
+      margin-right: 8px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__text {
+    p {
+      display:inline-block;
+      margin-left: 10%;
+    }
+  }
+
+  &__options {
+    margin-left: auto;
+
+    a {
+      display: flex;
+      cursor: pointer;
+      color: $theme-secondary;
+      height: 48px;
+      width: 140px;
+      border-radius: 4px;
+      font-size: 18px;
+      justify-content: center;
+      align-items: center;
+
+      i.fa {
+        font-size: 20px;
+      }
+
+      span {
+        padding-left: 4px;
+        line-height: 100%;
+      }
+
+      &.active, &:hover {
+        text-decoration: none;
+        background: $theme-secondary;
+        color: $text-light;
+      }
+    }
+  }
+}

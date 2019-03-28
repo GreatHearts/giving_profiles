@@ -1,0 +1,29 @@
+<div class="user-header d-flex container-fluid">
+    <div class="user-header__image">
+      <%= image_tag("home-profile_01.jpg", :alt => "rss feed", :class => "rounded-circle") %>
+    </div>
+
+    <div class="user-header__info align-self-center">
+      <h1 class="user-header__name">Name Here</h1>
+      <p class="user-header__location">City here</p>
+      <div class="user-header__social-networks">
+        <a href="#"><%= fa_icon "facebook-official", class: "fab" %></a>
+        <a href="#"><%= fa_icon "envelope-square" %></a>
+      </div>
+    </div>
+
+    <nav class="user-header__options justify-content-end d-flex">
+      <a href="#">
+        <%= fa_icon "home" %>
+        <span>Home</span>
+      </a>
+      <a href="#" class="active">
+        <%= fa_icon "user-circle" %>
+        <span>Profile</span>
+      </a>
+      <a href="#">
+        <%= fa_icon "cog" %>
+        <span>Settings</span>
+      </a>
+    </nav>
+</div>
