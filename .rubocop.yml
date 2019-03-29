@@ -1,0 +1,16 @@
+#default config at https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
+
+AllCops:
+  Include:
+    - '**/*.gemspec'
+    - '**/*.rake'
+    - '**/*.rb'
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+    - 'spec/**/*'
+    - 'old_giving_profiles/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+  TargetRubyVersion: 2.6.1
