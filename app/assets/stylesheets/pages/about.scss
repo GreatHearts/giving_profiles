@@ -1,0 +1,108 @@
+.about-page  {
+  margin-top: 60px;
+  max-width: 1024px;
+  margin-bottom: 48px;
+
+  .about-intro {
+    &__title {
+      font-size: 18px;
+      height: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 0.3px;
+      color: $text-title;
+      margin-left: 6.5%;
+    }
+    &__paragraph {
+     margin-top: 16px;
+     height: 120px;
+     font-size: 18px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.33;
+     letter-spacing: normal;
+     color: $text-body;
+     letter-spacing: 0.13px;
+     margin-left: 6.5%;
+     margin-bottom: 20px;
+   }
+   &__line {
+     width: 452px;
+     height: 1px;
+     margin-left: 6.5%;
+     color: #bbbbbb;
+     background-color: #bbbbbb;
+     margin-top: .25%;
+   }
+  }
+
+  .team-members {
+    margin-top: .5%;
+    margin-left: 5%;
+    &__title {
+      width: 192px;
+      height: 24px;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: 1px;
+      color: $text-subtitle;
+      margin-left: 1%;
+    }
+    &__information {
+      padding-left: 80px;
+      h1 {
+        font-size: 18px;
+        height: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: 0.3px;
+        color: $text-title;
+      }
+    }
+    .team-members-bottom {
+      margin-left: 50px;
+      &__line{
+        width: 192px;
+        margin: 0;
+        margin-bottom: 19px;
+        height: 1px;
+        color: #bbbbbb;
+        background-color: #bbbbbb;
+      }
+      &__name {
+        width: 192px;
+        height: 24px;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: 0.2px;
+        color: $text-title;
+      }
+      &__role {
+        width: 192px;
+        height: 16px;
+        font-size: 12px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: 0.6px;
+        color: $text-toned-down;
+        text-transform: uppercase;
+      }
+      &__role-paragraph {
+        margin-left: 16px;
+      }
+    }
+  }
+}

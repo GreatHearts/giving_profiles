@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_15_025104) do
+ActiveRecord::Schema.define(version: 2019_03_24_004858) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,7 +49,6 @@ ActiveRecord::Schema.define(version: 2019_02_15_025104) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name", null: false
     t.string "nick_name"
     t.string "fb_id"
     t.string "email"
@@ -62,10 +61,15 @@ ActiveRecord::Schema.define(version: 2019_02_15_025104) do
     t.boolean "deleted", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "location"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["favorite_cause"], name: "index_users_on_favorite_cause"
     t.index ["fb_id"], name: "index_users_on_fb_id", unique: true
-    t.index ["name"], name: "index_users_on_name"
+    t.index ["first_name"], name: "index_users_on_first_name"
+    t.index ["last_name"], name: "index_users_on_last_name"
+    t.index ["location"], name: "index_users_on_location"
     t.index ["yearly_income"], name: "index_users_on_yearly_income"
   end
 

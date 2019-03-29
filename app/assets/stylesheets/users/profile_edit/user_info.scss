@@ -1,0 +1,26 @@
+.editable-content {
+  .user-info {
+    width: 85%;
+    &__row{
+      margin-bottom: 10px;
+    }
+    &__name_fields {
+      display: flex;
+      .first-name-field {
+        margin-right: 10px;
+      }
+    }
+    .input-group {
+      .input-group-append {
+        .input-group-text {
+          border: solid 1px $text-toned-down;
+          border-left:0px;
+          background-color:white;
+        }
+      }
+      .location-field { 
+        border-right: 0px;
+      }
+    }
+  }
+}

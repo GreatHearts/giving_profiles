@@ -1,0 +1,24 @@
+<div class= "user-info">
+  <div class="user-info__name user-info__row">
+    <div class="label"> Name </div>
+    <div class="user-info__name_fields"> 
+      <%= form.text_field :first_name, class: "form-control first-name-field", placeholder: "Enter first name" %>
+      <%= form.text_field :last_name,  class: "form-control", placeholder: "Enter last name" %>
+    </div>
+  </div>
+
+  <div class="user-info__location user-info__row">
+    <div class="label"> Location </div>
+    <div class="input-group">
+      <%= form.text_field :location, class: "form-control location-field", placeholder: "Enter location" %>
+      <div class="input-group-append">
+        <%= fa_icon "map-marker", class: "input-group-text" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="user-info__email user-info__row">
+    <div class="label"> Email </div>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter email" %>
+  </div>
+</div>

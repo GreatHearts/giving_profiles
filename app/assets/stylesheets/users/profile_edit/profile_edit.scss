@@ -1,0 +1,37 @@
+.user-profile-edit {
+  margin-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  &__form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .form-control {
+      border: solid 1px $text-toned-down;
+    }
+
+    .label {
+      color: $text-toned-down;
+      font-size: 14px;
+    }
+
+    .profile-pic {
+      align-self: flex-start;
+    }
+
+    .editable-content{
+      flex-grow: 4;
+      margin-left: 5%;
+      margin-right: 5%;
+      .profile-section {
+        margin-top: 30px;
+      }
+    }
+
+    .action-buttons{
+      flex-grow: 2;
+    }
+  }
+}

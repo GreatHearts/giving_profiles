@@ -76,4 +76,19 @@
       }
     }
   }
+
+  &__nav-wrapper {
+    margin-left: auto;
+    .edit-profile-button {
+      margin-top: 15px;
+      border-radius: 4px;
+      font-size: 18px;
+      text-decoration: none;
+      color: $theme-secondary;
+      border: solid 2px $theme-secondary;
+      padding: 10px;
+      width: 100% * 2 / 3;
+      text-align: center;
+    }
+  }
 }

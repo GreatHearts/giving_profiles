@@ -7,9 +7,14 @@ class User < ApplicationRecord
 
   validates :fb_id, uniqueness: true, presence: true #this can be removed when some other signup/login method is added.
   validates :email, uniqueness: true
+  validates_presence_of :first_name, :last_name
 
   def badges
     donated_causes.uniq
+  end
+
+  def name
+    "#{first_name} #{last_name}"
   end
 
   def donated_causes

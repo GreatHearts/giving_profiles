@@ -1,0 +1,8 @@
+<div class="donation-bar" data-cause="<%= cause %>" data-percent="<%= percent %>" data-is-highest="<%= highest %>">
+  <div class="donation-bar__bar bg_color_<%= cause %>"></div>
+  <div class="donation-bar__cause">#<%= cause %></div>
+  <div class="donation-bar__percent"><%= percent %>%</div>
+  <% if highest %>
+    <div class="donation-bar__highest-bar bg_color_<%= cause %>"></div>
+  <% end %>
+</div>

@@ -1,0 +1,23 @@
+.user-profile-edit__form {
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    &__save {
+      color: $text-light;
+      background-color: $theme-secondary;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+    &__cancel {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 4px;
+      border: solid 2px $theme-secondary;
+      text-align: center;
+      text-decoration: none;
+      color: $theme-secondary;
+    }
+  }
+}
