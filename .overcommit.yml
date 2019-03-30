@@ -1,5 +1,0 @@
-#default config at https://github.com/brigade/overcommit/blob/master/config/default.yml
-
-PreCommit:
-  RuboCop:
-    enabled: false
