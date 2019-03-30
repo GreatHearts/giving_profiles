@@ -8,6 +8,7 @@ install:
 before_script:
   - cp config/database.yml.travis config/database.yml
 script:
+  - rails check
   - rails db:create
   - rails db:migrate
   - rails db:seed
