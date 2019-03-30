@@ -6,6 +6,11 @@ namespace :check do
   require "rubocop/rake_task"
   RuboCop::RakeTask.new(:rubocop)
 
+  task :no_fix do
+    Rake::Task["check:lint:no_fix"].invoke
+    Rake::Task["check:audit"].invoke
+  end
+
   task :lint do
     puts "Running rubocop w/ auto_correct"
     Rake::Task["check:rubocop:auto_correct"].invoke
