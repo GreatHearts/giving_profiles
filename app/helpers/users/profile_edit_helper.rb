@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Users
-  class ProfileEditHelper
+  module ProfileEditHelper
     def render_first_donation_bar(donations_by_causes:)
       cause, percent = donations_by_causes[0]
       render_donation_bar(cause: cause, percent: percent, highest: true)
