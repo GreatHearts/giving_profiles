@@ -15,7 +15,12 @@
 // Pages CSS
 @import "pages/about";
 @import "pages/home";
+@import "pages/policy";
 @import "pages/login";
 
 // User CSS
 @import "users";
+
+.horizontal-divider {
+  border: solid 1px $element-toned-down;
+}
