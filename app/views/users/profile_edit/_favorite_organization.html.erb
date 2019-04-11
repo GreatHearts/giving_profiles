@@ -1,7 +1,7 @@
 <% org_type = favorite_organization.organization.org_type %>
 <div class="fav-org">
   <%= form.fields_for :user_favorite_organizations, favorite_organization do |fav_org_fields| %>
-    <div class="fav-org__header"> 
+    <div class="fav-org__header">
       <%= fa_icon "#{cause_logos[org_type]} 2x", class: "fav-org__logo" %> <!-- place hoolder for now -->
       <div class="fav-org__name_and_type">
         <div class="fav-org__name"> <%= favorite_organization.organization.name %> </div>

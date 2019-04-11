@@ -1,20 +1,20 @@
 <%= render "users/profile_sections/profile_section", title: "DONATIONS BY CAUSES"  do %>
   <div class="donations-bars">
     <% @donations_by_causes.each do |cause, percent| %>
-      <div class='<%= "#{cause}-bar donation-bar bg_color_#{cause}"%>' data-percent='<%= percent %>'></div>
-    <% end %>    
+      <div class='<%= "#{cause}-bar donation-bar bg_color_#{cause}" %>' data-percent='<%= percent %>'></div>
+    <% end %>
 
     <% @donations_by_causes.each do |cause, percent| %>
-      <div class='<%= "donation-cause-text"%>' data-percent='<%= percent %>'>#<%= cause.capitalize %></div>
-    <% end %> 
+      <div class='<%= "donation-cause-text" %>' data-percent='<%= percent %>'>#<%= cause.capitalize %></div>
+    <% end %>
 
     <% @donations_by_causes.each do |cause, percent| %>
-      <div class='<%= "donation-percent"%>' data-percent='<%= percent %>'><%= percent %>%</div>
-    <% end %>    
+      <div class='<%= "donation-percent" %>' data-percent='<%= percent %>'><%= percent %>%</div>
+    <% end %>
 
     <% if @donations_by_causes.present? %>
     <% highest = @donations_by_causes.first %>
-      <div class='<%= "highest-donation-bar bg_color_#{highest[0]}"%>'></div>
+      <div class='<%= "highest-donation-bar bg_color_#{highest[0]}" %>'></div>
     <% end %>
   </div>
 

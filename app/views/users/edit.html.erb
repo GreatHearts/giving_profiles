@@ -1,13 +1,13 @@
 <%= javascript_include_tag "users/profile_edit" %>
 <div class="user-profile-edit container-fluid">
-<%= form_for( @user , remote: true, html: {class: "user-profile-edit__form"} ) do |f| %>
+<%= form_for(@user, remote: true, html: { class: "user-profile-edit__form" }) do |f| %>
   <%= render "users/profile_edit/profile_pic", form: f %>
   <div class="editable-content">
     <%= render "users/profile_edit/user_info", form: f %>
     <%= render "users/profile_edit/philosophy", form: f %>
     <%= render "users/profile_edit/donations_by_causes", form: f %>
     <%= render "users/profile_edit/favorite_organizations", form: f %>
-  </div>  
+  </div>
   <%= render "users/profile_edit/action_buttons", form: f %>
 <% end %>
 </div>

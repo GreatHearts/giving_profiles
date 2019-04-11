@@ -51,6 +51,7 @@ group :development, :test do
   gem "bundler-audit"
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   gem "dotenv-rails"
+  gem "erb_lint", require: false
   gem "factory_bot_rails"
   gem "faker"
   gem "rspec-rails", "~> 3.8"

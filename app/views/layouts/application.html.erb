@@ -5,15 +5,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Roboto' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=Roboto" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track': "reload" %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <%= render template: 'layouts/header' %>
+    <%= render template: "layouts/header" %>
     <%= yield %>
-    <%= render template: 'layouts/footer' %>
+    <%= render template: "layouts/footer" %>
   </body>
 </html>

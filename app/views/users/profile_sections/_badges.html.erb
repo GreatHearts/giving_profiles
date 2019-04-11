@@ -5,6 +5,6 @@
     <% end %>
   </div>
   <% if @user.badges.size > 6 %>
-    <div class="remaining-badges"><%= "and #{ @badges.size - 6 } other #{"badge".pluralize(@user.badges.size - 6)}..."%></div>
-  <% end%>
+    <div class="remaining-badges"><%= "and #{@badges.size - 6} other #{'badge'.pluralize(@user.badges.size - 6)}..." %></div>
+  <% end %>
 <% end %>

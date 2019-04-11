@@ -1,17 +1,16 @@
 <%= render "users/profile_sections/profile_section", title: "DONATIONS BY CAUSES"  do %>
   <div class="donation-distribution">
     <% if @donations_by_causes.present? %>
-      <div class="left-arrow" >
+      <div class="left-arrow">
         <%= fa_icon "arrow-circle-left" %>
       </div>
       <%= render_first_donation_bar(donations_by_causes: @donations_by_causes) %>
-      <div class="right-arrow" >
+      <div class="right-arrow">
         <%= fa_icon "arrow-circle-right" %>
       </div>
-      <% render_remaining_donation_bars(donations_by_causes: @donations_by_causes) %> 
-    <% end %>   
+      <% render_remaining_donation_bars(donations_by_causes: @donations_by_causes) %>
+    <% end %>
   </div>
 
   <%= form.text_area :favorite_cause_description, class: "form-control fav-cause-desc", placeholder: "When I give, I often give to..." %>
 <% end %>
-
