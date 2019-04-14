@@ -12,16 +12,14 @@
 
   &__card {
     margin-top: 80px;
+    padding-top: 20px;
     margin-right: 20px;
     height: 376px;
     border-radius: 12px;
-    width: 100%;
   }
   @include media-breakpoint-up(lg) {
     &__card {
       min-width: 300px;
-      max-width: 348px;
-      max-width: 300px;
       margin-right: 10vw;
       margin-top: 100px;
     }
@@ -35,11 +33,12 @@
     margin-bottom: 16px;
     letter-spacing: normal;
     color: var(--text-body);
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
-  @include media-breakpoint-up(lg) {
+
+  @include media-breakpoint-down(xs) {
     &__card-title {
-      max-width: 348px;
+      font-size: 1em;
     }
   }
 
