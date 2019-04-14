@@ -19,27 +19,14 @@
   }
   @include media-breakpoint-up(lg) {
     &__card {
-      min-width: 300px;
+      min-width: 350px;
       margin-right: 10vw;
       margin-top: 100px;
     }
   }
   &__card-title {
-    color: black;
-    font-family: 'Roboto-Black', sans-serif;
-    font-weight: 900;
-    letter-spacing: 0.2px;
     margin-top: 16px;
     margin-bottom: 16px;
-    letter-spacing: normal;
-    color: var(--text-body);
-    font-size: 1.1em;
-  }
-
-  @include media-breakpoint-down(xs) {
-    &__card-title {
-      font-size: 1em;
-    }
   }
 
   &__heart-btn {
