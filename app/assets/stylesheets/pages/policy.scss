@@ -1,35 +1,31 @@
-.policy-page {
+.policy {
   margin-top: 60px;
   margin-bottom: 40px;
   @include media-breakpoint-down(sm) {
     font-size: 16px;
   }
 
-  .horizontal-divider.policy-intro {
-    width: 44%;
-    @include media-breakpoint-down(sm) {
-      width: 100%;
+  &__divider {
+    &__privacy-policy {
+      width: 44%;
       margin: 20px 0;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin: 20px 0 15px 0;
+      }
     }
-  }
 
-  .horizontal-divider {
-    width: 25%;
-    margin: 20px 0;
-    transition-duration: 2s;
-    @include media-breakpoint-down(sm) {
+    &__faq {
       width: 192px;
-      margin: 20px 0 0 0;
-
+      margin-top: 20px;
+      transition-duration: 2s;
     }
   }
 
-  .heading {
-    margin: 15px 0 4px 0;
-
-    @include media-breakpoint-down(sm) {
-      font-size: 16px;
-      line-height: 20px;
+  &__heading {
+    margin: 20px 0 4px 0;
+    @include media-breakpoint-down(lg) {
+      margin-top: 16px;
     }
   }
 }
