@@ -1,0 +1,31 @@
+.policy {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+  }
+
+  &__divider {
+    &__privacy-policy {
+      width: 44%;
+      margin: 20px 0;
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin: 20px 0 15px 0;
+      }
+    }
+
+    &__faq {
+      width: 192px;
+      margin-top: 20px;
+      transition-duration: 2s;
+    }
+  }
+
+  &__heading {
+    margin: 20px 0 4px 0;
+    @include media-breakpoint-down(lg) {
+      margin-top: 16px;
+    }
+  }
+}

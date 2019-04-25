@@ -1,67 +1,49 @@
 ///login page styleing
 
 .login {
-  background: url("BackgroundImage.jpeg") no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-color: $theme-primary;
- top: 0;
- bottom: 0;
- height: 100vh;
-
-    .card {
-      margin-top: 80px;
-      margin-right: 20px;
-      height: 376px;
-      border-radius: 12px;
-      width:100%;
-      @include media-breakpoint-up(lg){
-        min-width: 300px;
-        max-width: 348px;
-        max-width: 300px;
-        margin-right: 10vw;
-        margin-top: 100px;
-      }
-      .card-title {
-        color: black;
-        font-family: 'Roboto-Black', sans-serif;
-        font-weight: bold;
-        letter-spacing: 0.2px;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        }
-      .card-text {
-        letter-spacing: normal;
-        color: var(--text-body);
-        font-size: 18px;
-        }
-        @include media-breakpoint-up(lg){
-          max-width: 348px;
-          margin-right: 10vw;
-        }
-
-      .fa-heart-o{
-        color: white;
-      }
-      .facebook-icon{
-        color: white;
-        background-color: $facebook-blue;
-      }
-      .facebook-button{
-        height: 48px;
-        font-size: 1rem;
-        color: white;
-        background-color: $facebook-blue;
-      }
+  &__card {
+    margin-top: 80px;
+    padding-top: 20px;
+    margin-right: 20px;
+    height: 376px;
+    border-radius: 12px;
+  }
+  @include media-breakpoint-up(lg) {
+    &__card {
+      min-width: 350px;
+      margin-right: 10vw;
+      margin-top: 100px;
     }
+  }
+  &__card-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__heart-btn {
+    color: white;
+    background-color: $gp-yellow;
+  }
+
+  &__facebook-icon {
+    color: white;
+    background-color: $facebook-blue;
+  }
+
+  &__facebook-button {
+    height: 48px;
+    font-size: 1rem;
+    color: white;
+    background-color: $facebook-blue;
+  }
+  small {
+    font-size: 10px;
+    margin: 20px 0 2% 5%;
+    float: right;
+  }
+  @include media-breakpoint-up(lg) {
     small {
-      font-size: 10px;
-      margin: 10px 0 2% 5%;
-      margin-top: 20px;
-      float: right;
-        @include media-breakpoint-up(lg){
-          margin-right: 120px;
-        }
+      margin-right: 10vw;
     }
+  }
 }
