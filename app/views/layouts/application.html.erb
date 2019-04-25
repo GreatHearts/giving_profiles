@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>GivingProfiles</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
-    <%= stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=Roboto" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track': "reload" %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Roboto' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
   <body>
-    <%= render template: "layouts/header" %>
-    <%= yield %>
-    <%= render template: "layouts/footer" %>
+    <%= render template: 'layouts/header' %>
+    <div class=<%= 'hands-bg' if login_page? %>>
+      <%= yield %>
+      <%= render template: 'layouts/footer' %>
+
+    </div>
   </body>
 </html>
