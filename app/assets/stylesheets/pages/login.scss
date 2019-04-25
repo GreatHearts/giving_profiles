@@ -1,15 +1,6 @@
 ///login page styleing
 
 .login {
-  background: url("BackgroundImage.jpeg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-color: $theme-primary;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-
   &__card {
     margin-top: 80px;
     padding-top: 20px;
