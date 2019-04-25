@@ -12,7 +12,7 @@
 
   <body>
     <%= render template: "layouts/header" %>
-    <div class=<%= "hands-bg" if login_page? %>>
+    <div class="<%= "hands-bg" if login_page? %>">
       <%= yield %>
       <%= render template: "layouts/footer" %>
 

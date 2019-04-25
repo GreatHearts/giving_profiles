@@ -15,6 +15,7 @@ namespace :check do
     puts "Running rubocop w/ auto_correct"
     Rake::Task["check:rubocop:auto_correct"].invoke
     bundle exec "erblint --lint-all --autocorrect"
+    bundle exec "erblint --lint-all"
   end
 
   task :audit do
