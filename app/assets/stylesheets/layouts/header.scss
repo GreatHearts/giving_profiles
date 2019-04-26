@@ -3,7 +3,7 @@
   background-color: $theme-primary;
   display: flex;
   position: sticky;
-  z-index: 9999;
+  z-index: $top-z-index;
   top: 0;
 }
 
