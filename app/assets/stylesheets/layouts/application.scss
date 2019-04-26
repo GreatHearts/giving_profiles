@@ -1,0 +1,10 @@
+.hands-bg {
+  background: linear-gradient(to bottom, transparent, #0000004a), no-repeat, url(BackgroundImage.jpeg);
+  background-position-y: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+}
