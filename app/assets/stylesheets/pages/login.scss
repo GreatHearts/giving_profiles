@@ -1,4 +1,13 @@
 ///login page styleing
+.fa-facebook-square {
+  font-size: 29px;
+  color: $text-light;
+}
+
+.login__facebookLink{
+  font-size: .9em;
+  color: $text-light;
+}
 
 .login {
   &__card {
