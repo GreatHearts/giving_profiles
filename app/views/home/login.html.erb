@@ -8,12 +8,15 @@
           <p class="body-toned-down">Share your donations with your friends and the community.</p>
           <p class="body-toned-down">See what charitable causes your friends care about.</p>
           <div class="mt-auto p-2 bd-highlight btn btn-lg w-100 login__facebook-button mt-auto w-100">
-            <a href="/auth/facebook" role="button" aria-pressed="true">
               <div class="row align-items-center">
-                <div class="col-2"><%= fa_icon "facebook-square" %>
-                  <a href="/auth/facebook"></a>
+                <div class="col-12">
+                  <div class="float-left align-self-center">
+                  <%= fa_icon "facebook-square" %>
+                  </div>
+                  <div class="login__facebookLink">
+                  <%= link_to "Login With Facebook", "/auth/facebook", id: "sign_in", class: "login__facebookLink" %>
+                  </div>
                 </div>
-                <div class="col-8"><%= link_to "Login With Facebook", "/auth/facebook", id: "sign_in", class: "login__facebookLink" %></div>
               </div>
             </div>
           </div>
