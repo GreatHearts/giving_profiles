@@ -1,6 +1,6 @@
 <div class="header align-self-start <%= locals[:column_classes] %>">
   <div class="align-self-start">
-    <div class="heading header__heading">
+    <div class="heading header__heading<%= locals[:title_modifier] %>">
       <%= locals[:header_title] %>
     </div>
     <%= yield %>

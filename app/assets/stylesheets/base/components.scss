@@ -3,20 +3,18 @@
 }
 
 .header {
-  &--main {
-    .header__heading {
-      margin-bottom: 16px;
-    }
-  }
 
-  @include media-breakpoint-up(lg) {
-    &--main {
-      margin-bottom: 12px;
-    }
-  }
+
+
 
   &__heading {
     margin-bottom: 4px;
+    &--page-title {
+      margin-bottom: 16px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 12px;
+      }
+    }
   }
 
   &__divider {
