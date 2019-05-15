@@ -9,7 +9,7 @@
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 80px;
-    &--login {
+    &--no-margin {
       margin: 0;
     }
   }

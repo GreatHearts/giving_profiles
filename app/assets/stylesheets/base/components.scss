@@ -5,7 +5,8 @@
 .header {
   &__heading {
     margin-bottom: 4px;
-    &--page-title {
+
+    &--large-margin {
       margin-bottom: 16px;
       @include media-breakpoint-up(lg) {
         margin-bottom: 12px;
