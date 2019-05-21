@@ -1,6 +1,18 @@
 ///login page styleing
 
 .login {
+  &__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include media-breakpoint-down(md) {
+      left: -200px;
+    }
+    /* Preserve aspet ratio */
+    min-width: 1200px;
+    min-height: 100%;
+    width: 100%;
+  }
   &__card {
     margin-top: 80px;
     padding-top: 20px;
