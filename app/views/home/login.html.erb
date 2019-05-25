@@ -12,7 +12,8 @@
               <div class="mt-auto p-2 bd-highlight btn btn-lg w-100 login__facebook-button">
                 <div class="row row align-items-center">
                   <div class="col-2"><%= fa_icon "facebook-square", class: "login__facebook-icon fa-2x" %></div>
-                  <div class="col">Login With Facebook</div>
+                  <div class="col">
+                    <%= link_to "Login With Facebook", user_facebook_omniauth_authorize_path %></div>
                 </div>
               </div>
             </a>
