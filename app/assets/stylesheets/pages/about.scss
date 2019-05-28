@@ -1,4 +1,4 @@
-.about-page  {
+.about-page {
   margin-top: 60px;
   max-width: 1024px;
   margin-bottom: 48px;
@@ -9,11 +9,10 @@
       transition-duration: 2s;
     }
   }
+
   &__role {
     @extend .body-small-bold;
     @extend .text-uppercase;
     columns: $text-toned-down;
   }
-
-
 }
