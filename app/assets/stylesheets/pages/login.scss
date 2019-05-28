@@ -5,14 +5,17 @@
     position: fixed;
     top: 0;
     left: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.29)), no-repeat, url(BackgroundImage.jpg);
+    /* Preserve aspect ratio */
+    background-size: 110% auto;
     @include media-breakpoint-down(md) {
-      left: -200px;
+      background-size: 1400px auto;
     }
-    /* Preserve aspet ratio */
-    min-width: 1200px;
-    min-height: 100%;
-    width: 100%;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
   }
+
   &__card {
     margin-top: 80px;
     padding-top: 20px;
