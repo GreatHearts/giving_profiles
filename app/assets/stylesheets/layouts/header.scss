@@ -13,30 +13,46 @@
   @include media-breakpoint-down(sm) {
     margin-bottom: 32px;
   }
+
+  .logo {
+    width: 60px;
+    height: 28px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-top: 16px;
+    margin-left: 32px;
+  }
+
+  .logo > a {
+    text-decoration: none;
+    color: $theme-secondary;
+  }
+
+  .header-search {
+    font-family: Roboto, Helvetica, sans-serif;
+    color: $text-body;
+    margin-left: 36px;
+    margin-top: 20px;
+  }
+
+  &__login-btn {
+    padding: 10px;
+    width: 140px;
+    height: 48px;
+    margin: 6px 156px 6px auto;
+    @include media-breakpoint-down(md) {
+      background-color: transparent;
+      color: $theme-secondary;
+      margin: 12px 14px 12px auto;
+      width: 88px;
+      height: 36px;
+      padding: 5px;
+    }
+  }
 }
 
-.logo {
-  width: 60px;
-  height: 28px;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  margin-top: 16px;
-  margin-left: 32px;
-}
-
-.logo > a {
-  text-decoration: none;
-  color: $theme-secondary;
-}
-
-.header-search {
-  font-family: Roboto, Helvetica, sans-serif;
-  color: $text-body;
-  margin-left: 36px;
-  margin-top: 20px;
-}

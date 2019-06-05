@@ -13,6 +13,9 @@
   <body >
     <div>
       <%= render template: "layouts/header" %>
+        <% flash.each do |key, value| %>
+         <div class=“alert alert-#{key}><%= value %></div>
+        <% end %>
       <%= yield %>
       <%= render template: "layouts/footer" %>
     </div>

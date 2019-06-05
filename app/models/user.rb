@@ -3,17 +3,15 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable,
+  devise :database_authenticatable, :registerable,:rememberable, :validatable,
          :omniauthable, :omniauth_providers => [:facebook]
   enum favorite_cause: Organization.org_types
 
   has_many :user_favorite_organizations, dependent: :destroy
   has_many :favorite_organizations, through: :user_favorite_organizations, source: :organization
   has_many :donations, dependent: :destroy
-  
+
   validates :email, uniqueness: true
-  validates_presence_of :first_name, :last_name
 
   def self.new_with_session(params, session)
     super.tap do |user|
@@ -27,7 +25,9 @@ class User < ApplicationRecord
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
-      user.nick_name = auth.info.name   # assuming the user model has a name
+      user.nick_name = auth.info.name
+      user.avatar_url = auth.info.image # assuming the user model has a name
+# assuming the user model has a name
     end
   end
 
@@ -58,5 +58,10 @@ class User < ApplicationRecord
     end
     @donations_by_causes
   end
+
+  def profile_image
+    avatar_url.present? ? avatar_url : "home-profile_01.jpg"
+  end
+
   # rubocop:enable Metrics/AbcSize
 end
