@@ -14,7 +14,10 @@ RSpec.describe Organization, type: :model do
       location_result = PgSearch.multisearch(organization.location)
 
       expect(name_result.first.searchable.name).to eq @organization.name
-      expect(org_type_result.first.searchable.org_type).to eq @organization.org_type
+      allow(@organization).to receive(:org_type).and_return("animals")
+
+      search_result_org_type = org_type_result.first.searchable.org_type
+      expect(search_result_org_type).to eq @organization.org_type
       expect(location_result.first.searchable.location).to eq @organization.location
       expect(location_result.first.searchable.id).to eq @organization.id
       expect(name_result.present?).to be true
