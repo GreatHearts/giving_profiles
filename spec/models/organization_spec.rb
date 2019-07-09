@@ -5,7 +5,7 @@ RSpec.describe Organization, type: :model do
 
   describe "Searching" do
     before do
-      @organization = create :organization
+      @organization = Organization.create(name: Faker::Stargate.planet, org_type: Organization.org_types.first.first, location: "#{Faker::Address.city}, IL")
     end
 
     it "return results if there are matches " do
@@ -14,7 +14,6 @@ RSpec.describe Organization, type: :model do
       location_result = PgSearch.multisearch(organization.location)
 
       expect(name_result.first.searchable.name).to eq @organization.name
-      puts @organization.as_json
       expect(org_type_result.first.searchable.org_type).to eq @organization.org_type
       expect(location_result.first.searchable.location).to eq @organization.location
       expect(location_result.first.searchable.id).to eq @organization.id
