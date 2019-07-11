@@ -12,5 +12,6 @@ In the folder where you cloned the project:
 ## Checks
 Run the following rake tasks before committing. By default the linter will run RuboCop w/ autocorrect.
 * To run all tasks: `rails check`
-* To run just RuboCop: `rails check:lint`
-* To run RuboCop w/o autocorrect: `rails check:lint:no_fix`
+* To run just RuboCop: `rails lint:rubocop:autocorrect`
+* To run RuboCop w/o autocorrect: `rails lint:rubocop:no_fix`
+* To run just ERBLint w/o autocorrect: `rails lint:erblint:no_fix`
