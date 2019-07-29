@@ -23,11 +23,10 @@ unless Rails.env.production?
     end
 
     namespace :erblint do
-      # autocorrect doesn't work correctly, shows no errors when they still exist
-      # task :autocorrect do
-      #   puts "Running erblint w/ autocorrect"
-      #   sh "erblint --lint-all --autocorrect"
-      # end
+      task :autocorrect do
+        puts "Running erblint w/ autocorrect"
+        sh "erblint --lint-all --autocorrect"
+      end
 
       desc "Check for ERBLint without autocorrect."
 

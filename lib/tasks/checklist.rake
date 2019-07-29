@@ -18,5 +18,5 @@ unless Rails.env.production?
     end
   end
 
-  task check: %w[check:audit lint:rubocop:autocorrect lint:erblint:no_fix spec]
+  task check: %w[check:audit lint:rubocop:autocorrect lint:erblint:autocorrect spec]
 end
