@@ -45,18 +45,18 @@ ActiveRecord::Base.transaction do
     ## NOTE: Org type, avatar_url is being randomly assigned and location hard coded for now until we get a specific mapping.
     orgs.each do |org|
       Organization.create_with(
-          org_type: Organization::org_types.keys.sample
+        org_type: Organization::org_types.keys.sample,
+        avatar_url: Faker::Avatar.image(
+          nil,
+          "50x50",
+          "jpg",
+          "any",
+          "any"
+        ),
+        location: "#{Faker::Address.city}, IL"
       ).find_or_create_by!(
-          name: org[:name],
-          fb_url: org[:fb_url],
-          avatar_url: Faker::Avatar.image(
-              nil,
-              "50x50",
-              "jpg",
-              "any",
-              "any"
-          ),
-          location: "#{Faker::Address.city}, IL"
+        name: org[:name],
+        fb_url: org[:fb_url]
       )
     end
 
