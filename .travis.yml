@@ -14,3 +14,5 @@ script:
   - rails check:no_fix
 addons:
   chrome: stable
+services:
+  - postgresql
