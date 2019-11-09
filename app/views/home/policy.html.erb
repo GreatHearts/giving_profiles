@@ -1,6 +1,6 @@
 <div class="container policy">
   <div class="row">
-    <%= render 'partials/static_page_heading', locals: {header_title: "Privacy Policy", column_classes: "col-12"} do %>
+    <%= render 'partials/static_page_heading', locals: {header_title: "Privacy Policy", column_classes: "col-12 header--main"} do %>
       <div class="header__content">This privacy policy has been compiled to
         better serve those who are
         concerned with how their 'Personally Identifiable Information' (PII) is
@@ -18,7 +18,7 @@
   </div>
 
   <div class="row">
-    <div class="col-12 col-lg-3 title-section">FAQ</div>
+    <div class="col-12 col-lg-3 title-section mb-3 mb-lg-0">FAQ</div>
 
     <%= render 'partials/static_page_heading', locals: {header_title: "What personal information do we collect from the people that visit our blog, website or app?", column_classes: "col-12 col-lg-9 mb-2"} do %>
       <div class="header__content">When ordering or registering on our site, as
@@ -136,14 +136,14 @@
         It's also important to note that we do not allow third-party behavioral
         tracking.
       </div>
-      <div class="col-12 col-lg-9 offset-lg-3">
+      <div class="col-12 col-lg-3 p-0">
         <div class="divider policy__divider--faq"></div>
       </div>
     <% end %>
 
     <%= render 'partials/static_page_heading', locals: {header_title: "Third-party disclosure", column_classes: "col-12 col-lg-9 offset-lg-3 my-2"} do %>
       <div class="header__content">
-        <p>
+        <div class="mb-2">
           We do not sell, trade, or otherwise transfer to outside parties your
           Personally Identifiable Information unless we provide users with advance
           notice. This does not include website hosting partners and other parties
@@ -152,7 +152,7 @@
           information confidential. We may also release information when it's
           release is appropriate to comply with the law, enforce our site
           policies, or protect ours or others' rights, property or safety.
-        </p>
+        </div>
         <div>
           However, non-personally identifiable visitor information may be provided
           to other parties for marketing, advertising, or other uses.
