@@ -7,7 +7,6 @@
     padding-left: 5%;
     padding-right: 5%;
   }
-
   .avatar {
     height: 36px;
     width: 36px;
@@ -22,6 +21,7 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
     margin-bottom: 12px;
     overflow: hidden;
+
     @include media-breakpoint-down(md) {
       height: 100px;
       width: 100%;
