@@ -14,12 +14,12 @@ RSpec.describe Organization, type: :model do
     end
 
     it "return results if there are matches " do
-      name_result = PgSearch.multisearch(organization.name)
-      org_type_result = PgSearch.multisearch(organization.org_type)
-      location_result = PgSearch.multisearch(organization.location)
+      name_result = PgSearch.multisearch(@organization.name)
+      org_type_result = PgSearch.multisearch(@organization.org_type)
+      location_result = PgSearch.multisearch(@organization.location)
 
       expect(name_result.present?).to be true
-      expect(name_result.map(&:searchable).include?(organization)).to be true
+      expect(name_result.map(&:searchable).include?(@organization)).to be true
       expect(name_result.first.searchable.name).to eq @organization.name
       allow(@organization).to receive(:org_type).and_return("animals")
 
@@ -28,13 +28,13 @@ RSpec.describe Organization, type: :model do
       expect(location_result.first.searchable.location).to eq @organization.location
       expect(location_result.first.searchable.id).to eq @organization.id
       expect(name_result.present?).to be true
-      expect(name_result.map(&:searchable).include?(organization)).to be true
+      expect(name_result.map(&:searchable).include?(@organization)).to be true
 
       expect(org_type_result.present?).to be true
-      expect(org_type_result.map(&:searchable).include?(organization)).to be true
+      expect(org_type_result.map(&:searchable).include?(@organization)).to be true
 
       expect(location_result.present?).to be true
-      expect(location_result.map(&:searchable).include?(organization)).to be true
+      expect(location_result.map(&:searchable).include?(@organization)).to be true
     end
 
     it "does NOT return results if there are no matches" do

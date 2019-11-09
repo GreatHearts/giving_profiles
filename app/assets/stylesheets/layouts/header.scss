@@ -14,26 +14,26 @@
   @include media-breakpoint-down(sm) {
     margin-bottom: 32px;
   }
-}
 
-.logo {
-  width: 60px;
-  height: 28px;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  margin-top: 16px;
-  margin-left: 32px;
-}
 
-.logo > a {
-  text-decoration: none;
-  color: $theme-secondary;
-}
+  .logo {
+    width: 60px;
+    height: 28px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-top: 16px;
+    margin-left: 32px;
+  }
+
+  .logo > a {
+    text-decoration: none;
+    color: $theme-secondary;
+  }
 
   .header-search {
     font-family: Roboto, Helvetica, sans-serif;
