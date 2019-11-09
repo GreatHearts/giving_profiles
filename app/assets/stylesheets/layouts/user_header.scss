@@ -47,11 +47,14 @@
     .edit-profile-button-container {
       
       display: none;
+      .btn {
+        width: 900px;
+      }
       @include media-breakpoint-up(lg) {
         margin-top: 16px;
         display: flex;
         .btn {
-          width: 500px;
+          width: 296px;
         }
       }
 
