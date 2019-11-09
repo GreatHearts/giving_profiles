@@ -15,6 +15,8 @@ class User < ApplicationRecord
                     location_changed?
                   ]
 
+  pg_search_scope :search_by_name_email_location, against: %i[first_name last_name nick_name email location]
+
   has_many :user_favorite_organizations, dependent: :destroy
   has_many :favorite_organizations, through: :user_favorite_organizations, source: :organization
   has_many :donations, dependent: :destroy
