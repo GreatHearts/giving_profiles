@@ -39,12 +39,14 @@ RSpec.describe User, type: :model do
       last_name_result = PgSearch.multisearch(user.last_name)
       full_name_result = PgSearch.multisearch(user.name)
       location_result = PgSearch.multisearch(user.location)
+      email_result = PgSearch.multisearch(user.email)
 
       expect(first_name_result.first.searchable.first_name).to eq user.first_name
       expect(last_name_result.first.searchable.last_name).to eq user.last_name
       expect(full_name_result.first.searchable.name).to eq user.name
       expect(location_result.first.searchable.location).to eq user.location
-      expect(location_result.first.searchable.id).to eq user.id
+      expect(email_result.first.searchable.email).to eq user.email
+      expect(email_result.first.searchable.id).to eq user.id
     end
 
     it "does NOT return results if there are no matches" do
