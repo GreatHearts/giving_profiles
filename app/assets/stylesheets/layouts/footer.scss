@@ -9,7 +9,7 @@
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 80px;
-    &--no-margin {
+    &--login {
       margin: 0;
     }
   }
@@ -33,6 +33,10 @@
     @include media-breakpoint-up(lg) {
       padding: 0 140px;
     }
+
+    &__login {
+      color: white;
+    }
   }
 
   &__site_map {
@@ -44,7 +48,6 @@
       font-size: 16px;
       line-height: 20px;
     }
-
     &__link {
       color: $element-toned-down !important;
     }

@@ -1,0 +1,62 @@
+.modal-content {
+	width: 312px;
+}
+
+.modal-body {
+
+  @include media-breakpoint-down(sm) { 
+  	margin: 0;
+		height: 100%;
+		width: 100%;
+  }  
+  .form-control {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+	.p-visible {
+		width: max-content;
+		margin-bottom: -8px;
+	}
+}
+
+.modal-footer {
+	padding: 0;
+	.btn-primary {
+		border-radius: 0 0 12px 12px;
+	} 
+}
+
+.modal-avatar-img {
+	width: 36px;
+	height: 36px;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon > i {
+  position: absolute;
+  display: block;
+  transform: translate(0, -4%);
+  top: 50%;
+  pointer-events: none;
+  width: 25px;
+  text-align: center;
+	font-style: normal;
+}
+
+.input-icon > input {
+  padding-left: 25px;
+	padding-right: 0;
+}
+
+.donation-modal-close {
+	padding: 0 !important;
+}
+
+.lock-icon {
+	margin-left: 10px;
+}
+

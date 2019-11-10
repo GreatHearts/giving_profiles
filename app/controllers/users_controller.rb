@@ -2,7 +2,7 @@
 
 class UsersController < ApplicationController
   helper_method :cause_logos # #will delete when we get real org logos.
-  before_action :user, :donations_by_causes, only: %i[home show edit]
+  before_action :user, :donations_by_causes, only: %i[home show edit add_donation]
   before_action :ensure_current_user, :verify_access, only: %i[home edit]
 
   def show
@@ -26,7 +26,21 @@ class UsersController < ApplicationController
 
   def home
     redirect_to login_path unless user_signed_in?
-    @network_donations = Donation.first(5)
+    @network_donations = Donation.order(created_at: :desc).first(5)
+  end
+
+  # /users/:id/add_donation
+  def add_donation
+    organization = Organization.find_or_create_by(name: user_params[:organization_name])
+    @donation = DonationService.create_donation(@user, organization, user_params[:amount])
+    if @donation.save
+      flash[:success] = "Successfully added donation!"
+      # should redirect to user home page
+    else
+      flash[:error] = @donation.errors.full_messages.join(";  ")
+      # should redirect to user home page with errors
+    end
+    redirect_to :home_user
   end
 
   private
@@ -60,6 +74,8 @@ class UsersController < ApplicationController
                                  :email,
                                  :philosophy,
                                  :favorite_cause_description,
+                                 :organization_name,
+                                 :amount,
                                  user_favorite_organizations_attributes: %i[id description])
   end
 

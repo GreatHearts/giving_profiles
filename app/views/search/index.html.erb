@@ -14,9 +14,13 @@
   <% if @users.present? %>
     <div class="row justify-content-between mt-3">
       <h2 class="pl-3 pl-md-0 title-section">PEOPLE</h2>
-      <div class="col body-toned-down text-right d-lg-none">See All</div>
+      <div class="col body-toned-down text-right d-lg-none">
+        <%= link_to "See All", user_search_results_path(@query) %>
+      </div>
       <div class="col body-toned-down text-right  d-none d-lg-block">
-        <%= fa_icon "arrow-right", text: "See all search results", class: "mr-3" %>
+        <%= link_to user_search_results_path(@query) do %>
+          <%= fa_icon "arrow-right", text: "See all search results", class: "mr-3" %>
+        <% end %>
       </div>
 
     </div>
@@ -45,9 +49,13 @@
   <% if @organizations.present? %>
     <div class="row justify-content-between mt-4">
       <h2 class="pl-3 pl-md-0 title-section">ORGANIZATIONS</h2>
-      <h3 class="col body-toned-down text-right d-lg-none">See All</h3>
+      <h3 class="col body-toned-down text-right d-lg-none">
+        <%= link_to "See All", organization_search_results_path(@query) %>
+      </h3>
       <h3 class="col body-toned-down text-right d-none d-lg-block">
-        <%= fa_icon "arrow-right", text: "See all search results", class: "mr-3" %>
+        <%= link_to organization_search_results_path(@query) do %>
+          <%= fa_icon "arrow-right", text: "See all search results", class: "mr-3" %>
+        <% end %>
       </h3>
     </div>
 

@@ -29,10 +29,49 @@
     <div class="row user-home__section-contents tab-content">
       <!-- network section -->
       <div class="col col-lg-3 tab-pane user-home__section-content active" id="network" role="tabpanel" aria-labelledby="network-tab">
-        <div class="w-100 btn btn-primary new-donation-btn d-none d-lg-inline-block">
+        <div class="w-100 btn btn-primary new-donation-btn d-none d-lg-inline-block" data-target="#new-donation" data-toggle="modal">
           <%= fa_icon "plus", text: "Record my donation", class: "pr-4" %>
         </div>
-        <div class="btn btn-primary new-donation-btn--mobile fixed-bottom ml-auto d-lg-none">
+        <div class="modal fade" id="new-donation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-avatar">
+                  <img class="rounded-circle user-header__image user-header__image--sm modal-avatar-img" src="<%= @user.profile_image %>" />
+                </div>
+                <h5 class="modal-title ml-2"><%= @user.name %></h5>
+                <button type="button" class="close donation-modal-close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-container">
+                <div class="modal-body">
+                  <%= form_for @user, url: add_donation_user_path, method: :post  do |f| %>
+                    <span>Amount</span>
+                    <div class="field form-inline">
+                      <span>$</span>
+                      <div class="input-icon">
+                        <%= f.text_field :amount, class: "form-control", placeholder: "0.00" %>
+                      </div>
+                  </div>
+                  <div class="field form-inline">
+                    <span>to</span>
+                    <%= f.text_field :organization_name, class: "form-control", placeholder: "Organization name" %>
+                  </div>
+                    <div class="field p-visible mt-2 mb-2">Public - Visible to everyone
+                      <span class="lock-icon">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Record Donation</button>
+                <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn btn-primary new-donation-btn--mobile fixed-bottom ml-auto d-lg-none" data-target="#new-donation" data-toggle="modal">
           <%= fa_icon "plus" %>
         </div>
 
@@ -49,9 +88,9 @@
                   <div class="user-home__card__header">
                     <%= link_to donation.user.name, donation.user, class: "align-top user-home__card__donor-name heading" %>
                     <div class="donated-to-text"> Donated to</div>
-                    <a href="#" class="user-home__card__menu <%= donation.user == current_user ? "" : "d-none" %>"><%= fa_icon "ellipsis-v" %></a> <!-- Place holder for now. -->
+<!--                    <a href="#" class="user-home__card__menu <%#= donation.user == current_user ? "" : "d-none" %>"><%#= fa_icon "ellipsis-v" %></a> -->
                   </div>
-                  <%= link_to donation.organization.name, "/#donation.organization", class: "align-top user-home__card__organization body-medium" %>
+                  <div class="align-top user-home__card__organization body-medium"><%= donation.organization.name %></div>
                   <div class="user-home__card__time"><%= donation.created_at.strftime("%I:%M %p - %b %e, %Y") %></div>
                 </div>
               </div>

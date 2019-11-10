@@ -1,0 +1,25 @@
+<div class="search-organizations container">
+  <div class="row mt-3">
+    <% @organizations.each do |result| %>
+      <div class="col-12 mb-4 col-md-6 container">
+        <div class="row">
+          <div class="col-2 col-md-1 p-md-0 w-50 mr-1 mr-lg-0">
+            <%= image_tag(result.avatar_url, alt: "rss feed", class: "rounded-circle avatar") %>
+          </div>
+          <div class="col-10 row mt-1 w-50">
+            <h3 class="col-12 ml-md-2 ml-lg-0 heading smaller">
+              <%= result.name %>
+            </h3>
+            <div class="col-12 ml-md-2 ml-lg-0 body-medium-toned-down smaller">
+              <%= result.location %>
+            </div>
+            <div class="col-12 ml-md-2 ml-lg-0 body-medium-toned-down mt-1">
+              <%= render "shared/org_type_oval", org_type: result.org_type %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>

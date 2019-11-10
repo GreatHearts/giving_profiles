@@ -15,6 +15,8 @@ class User < ApplicationRecord
                     location_changed?
                   ]
 
+  pg_search_scope :search_by_name_email_location, against: %i[first_name last_name nick_name email location]
+
   has_many :user_favorite_organizations, dependent: :destroy
   has_many :favorite_organizations, through: :user_favorite_organizations, source: :organization
   has_many :donations, dependent: :destroy
@@ -23,6 +25,9 @@ class User < ApplicationRecord
   validates_presence_of :first_name, :last_name
 
   accepts_nested_attributes_for :user_favorite_organizations
+
+  attr_accessor :organization_name
+  attr_accessor :amount
 
   # rubocop:disable AbcSize
   def self.from_omniauth(auth)
@@ -71,5 +76,12 @@ class User < ApplicationRecord
   def profile_image
     avatar_url.present? ? avatar_url : "default_avatar"
   end
+
+  # Donations made by friends/network
+  # TODO: scope to network donations
+  def network_donations
+    Donation.all
+  end
+
   # rubocop:enable Metrics/AbcSize
 end

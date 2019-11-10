@@ -1,6 +1,6 @@
 <div class="container policy">
   <div class="row">
-    <%= render "partials/static_page_heading", locals: { header_title: "Privacy Policy", column_classes: "col-12", title_modifier: "--large-margin" } do %>
+    <%= render "partials/static_page_heading", locals: { header_title: "Privacy Policy", column_classes: "col-12 header--main" } do %>
       <div class="header__content">This privacy policy has been compiled to
         better serve those who are
         concerned with how their 'Personally Identifiable Information' (PII) is
@@ -230,11 +230,8 @@
       </div>
     <% end %>
 
-    <%= render "partials/static_page_heading",
-               locals: {
-                 header_title: "Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?",
-                 column_classes: "col-12 col-lg-9 offset-lg-3 my-2"
-               } do %>
+    <%= render "partials/static_page_heading", locals: { header_title: "Do we let third-parties, including ad networks or plug-ins collect PII
+        from children under 13?", column_classes: "col-12 col-lg-9 offset-lg-3 my-2" } do %>
       <div class="header__content">
         We do not specifically market to children under the age of 13 years old.
 
