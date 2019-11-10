@@ -67,9 +67,9 @@ class User < ApplicationRecord
     @donations_by_causes
   end
 
+  # @todo Move to a helper
   def profile_image
     avatar_url.present? ? avatar_url : "default_avatar"
   end
-
   # rubocop:enable Metrics/AbcSize
 end

@@ -7,8 +7,8 @@ FactoryBot.define do
     email { Faker::Internet.email("#{first_name} #{last_name}", ".") }
     password { Faker::Internet.password }
 
-    factory :user_with_favorite_organizations, aliases: [:user_with_fav_orgs] do 
-      transient do 
+    factory :user_with_favorite_organizations, aliases: [:user_with_fav_orgs] do
+      transient do
         num_fav_orgs { 1 }
       end
       after(:create) do |user, evaluator|

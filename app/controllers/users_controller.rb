@@ -2,7 +2,8 @@
 
 class UsersController < ApplicationController
   helper_method :cause_logos # #will delete when we get real org logos.
-  before_action :user, :donations_by_causes, only: %i[show edit]
+  before_action :user, :donations_by_causes, only: %i[home show edit]
+  before_action :ensure_current_user, :verify_access, only: %i[home edit]
 
   def show
     @badges = @user.badges
@@ -21,6 +22,11 @@ class UsersController < ApplicationController
       flash[:error] = @user.errors.full_messages.join(";  ")
       render "edit"
     end
+  end
+
+  def home
+    redirect_to login_path unless user_signed_in?
+    @network_donations = Donation.first(5)
   end
 
   private
@@ -55,5 +61,19 @@ class UsersController < ApplicationController
                                  :philosophy,
                                  :favorite_cause_description,
                                  user_favorite_organizations_attributes: %i[id description])
+  end
+
+  def ensure_current_user
+    redirect_to root_path unless user_signed_in?
+  end
+
+  def verify_access
+    render_forbidden unless user_signed_in? && @user == current_user
+  end
+
+  def render_forbidden
+    # TODO: Add 403 page and render it
+    # render file: 'public/403.html', status: 403
+    redirect_to root_path
   end
 end

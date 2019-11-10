@@ -17,7 +17,7 @@
                     <% unless current_user %>
                       <%= link_to "Login with Facebook", user_facebook_omniauth_authorize_path %>
                       <% else %>
-                        <%= current_user[:name] %>
+                        <%= current_user.name %>
                       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
                       <% end %>
 

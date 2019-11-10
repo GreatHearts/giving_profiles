@@ -1,11 +1,20 @@
-<div class="card past-donation-card">
-  <div class="past-donation-card__header">
-    <div class="donated-to-text"> Donated to </div>
-    <a href="#" class="past-donation-card__menu"><%= fa_icon "ellipsis-v" %></a> <!-- Place holder for now. -->
+<div class="card donation-card container">
+  <div class="row">
+    <%= link_to donation.user, class: "col-2" do %>
+      <div class="mx-auto <%= (show_donor ? "" : "d-none").to_s %>">
+        <%= image_tag(donation.user.avatar_url, alt: "rss feed", class: "rounded-circle avatar") %>
+      </div>
+    <% end %>
+    <div class=<%= show_donor ? "col-10 offset-2" : "col-12" %>.to_s>
+      <div class="donation-card__header">
+        <% if show_donor %>
+          <%= link_to donation.user.name, donation.user, class: "align-top donation-card__donor-name heading" %>
+        <% end %>
+        <div class="donated-to-text"> Donated to </div>
+        <a href="#" class="donation-card__menu <%= donation.user == current_user ? "" : "d-none" %>"><%= fa_icon "ellipsis-v" %></a> <!-- Place holder for now. -->
+      </div>
+      <%= link_to donation.organization.name, "/#donation.organization", class: "align-top donation-card__organization body-medium" %>
+      <div class="donation-card__time"><%= donation.created_at.strftime("%I:%M %p - %b %e, %Y") %></div>
+    </div>
   </div>
-
-  <div class="past-donation-card__organization">
-    <%= donation.organization.name %>
-  </div>
-  <div class="past-donation-card__time"><%= donation.created_at.strftime("%I:%M %p - %b %e, %Y") %></div>
 </div>

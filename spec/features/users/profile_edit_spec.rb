@@ -1,9 +1,10 @@
 require 'rails_helper'
 
-feature 'User profile edit', js: true do 
+feature 'User profile edit', js: true do
   let!(:user1) { FactoryBot.create(:user_with_fav_orgs) }
 
   scenario 'valid changes' do
+    login_as(user1, :scope => :user)
     visit edit_user_path(user1)
     fill_in 'user_first_name', with: 'Mia'
     fill_in 'user_last_name', with: 'Okoye'
@@ -28,6 +29,8 @@ feature 'User profile edit', js: true do
   end
 
   scenario 'invalid changes' do
+    login_as(user1, :scope => :user)
+
     visit edit_user_path(user1)
     fill_in 'user_first_name', with: ''
     fill_in 'user_last_name', with: ''

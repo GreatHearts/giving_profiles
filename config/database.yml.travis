@@ -5,3 +5,4 @@ default: &default
 test:
   <<: *default
   database: giving_profiles_test
+dist: trusty
