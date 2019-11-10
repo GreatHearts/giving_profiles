@@ -1,17 +1,4 @@
 <div class="user-header d-flex container-fluid">
-<<<<<<< HEAD
-  <div class="row no-gutters w-100">
-    <div class="col-12 row no-gutters">
-      <%= image_tag(@user.profile_image, alt: "rss feed", class: "rounded-circle #{user_header_avatar_size}") %>
-      <div class="col align-self-end">
-        <div class="user-header__info align-self-center">
-          <h1 class="user-header__name d-none d-lg-block">
-            <%= @user.name %>
-          </h1>
-          <p class="user-header__location #{show_location?} d-none d-lg-block">
-            <%= @user.location %>
-          </p>
-=======
   <div class="row w-100 no-gutters">
     <div class="col-12 row no-gutters">
       <%= image_tag(@user.profile_image, alt: "rss feed", class: "rounded-circle #{user_header_avatar_size}") %>
@@ -23,16 +10,11 @@
           <%= @user.location %>
         </p>
         <% if user_profile_page? %>
->>>>>>> master
           <div class="user-header__social-networks">
             <a href="#"><%= fa_icon "facebook-official", class: "fab" %></a>
             <a href="#"><%= fa_icon "envelope-square" %></a>
           </div>
-<<<<<<< HEAD
-        </div>
-=======
         <% end %>
->>>>>>> master
       </div>
       <div class="col ml-auto">
         <div class="user-header__nav-wrapper d-flex flex-column">
@@ -50,36 +32,15 @@
               <span>Settings</span>
             </a>
           </nav>
-<<<<<<< HEAD
-          <div class="edit-profile-button-container mx-2">
-            <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse ml-auto mt-2" %>
-          </div>
-=======
           <% if user_profile_page? %>
             <div class="edit-profile-button-container mx-2">
               <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse ml-auto" %>
             </div>
           <% end %>
->>>>>>> master
         </div>
       </div>
     </div>
 
-<<<<<<< HEAD
-    <div class="col user-header__info--margin-0 align-self-center d-lg-none">
-      <h1 class="user-header__name">
-        <%= @user.name %>
-      </h1>
-      <p class="user-header__location #{show_location?}">
-        <%= @user.location %>
-      </p>
-    </div>
-    <div class="col-6 user-header__nav-wrapper">
-      <div class="edit-profile-button-container--d-lg-none clearfix">
-        <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse float-right mx-2 mr-4" %>
-      </div>
-    </div>
-=======
     <% if user_profile_page? %>
       <div class="col-6 user-header__info--margin-0 align-self-center d-lg-none">
         <h1 class="user-header__name">
@@ -97,6 +58,5 @@
         </div>
       <% end %>
     <% end %>
->>>>>>> master
   </div>
 </div>
