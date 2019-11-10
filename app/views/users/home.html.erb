@@ -64,7 +64,7 @@
       <div class="col-12 col-lg-8 offset-xl-1 tab-pane user-home__section-content row no-gutters container" id="favorite" role="tabpanel" aria-labelledby="favorite-tab">
         <% Organization.first(6).each do |organization| %>
           <div class="card user-home__card user-home__card--width-lg-244px h-auto p-lg-0 mx-lg-1">
-            <div class="fb-page" data-href="<%=organization.fb_url%>"
+            <div class="fb-page" data-href="<%= organization.fb_url %>"
                  data-tabs="timeline"
                  data-width="450"
                  data-small-header="false"
@@ -72,7 +72,7 @@
                  data-hide-cover="false"
                  data-show-facepile="true">
               <blockquote cite="https://www.facebook.com/GreatHeartsCommunity/" class="fb-xfbml-parse-ignore">
-                <a href="<%=organization.fb_url%>">Loading - <%=organization.name%></a>
+                <a href="<%= organization.fb_url %>">Loading - <%= organization.name %></a>
               </blockquote>
             </div>
           </div>
