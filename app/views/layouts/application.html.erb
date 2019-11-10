@@ -10,12 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
 
-  <body>
-    <div>
-      <%= render template: "layouts/header" %>
-      <%= yield %>
-      <%= render template: "layouts/footer" %>
-    </div>
+  <body class="<%= "hands-bg" if login_page? %>">
+    <%= render template: "layouts/header" %>
+    <%= yield %>
+    <%= render template: "layouts/footer" %>
 
   </body>
 </html>

@@ -60,7 +60,6 @@
           width: 296px;
         }
       }
-
       &--d-lg-none {
         display: block;
         @include media-breakpoint-up(lg) {
@@ -128,6 +127,7 @@
         @include media-breakpoint-down(md) {
           display: none;
         }
+
       }
 
       &.active, &:hover {

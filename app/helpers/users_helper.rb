@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
 module UsersHelper
+  def show_edit_button?(_user)
+    if user_profile_page?
+      "d-block"
+    else
+      "d-none"
+    end
+  end
+
   def show_location?
     if user_profile_page?
       "d-block"

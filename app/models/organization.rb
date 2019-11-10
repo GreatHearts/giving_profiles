@@ -4,6 +4,7 @@ class Organization < ApplicationRecord
   include PgSearch
   multisearchable against: %i[name org_type location],
                   update_if: %i[name_changed? org_type_changed? location_changed?]
+  pg_search_scope :search_by_name_type_location, against: %i[name org_type location]
 
   enum org_type: {
     animals: "animals",

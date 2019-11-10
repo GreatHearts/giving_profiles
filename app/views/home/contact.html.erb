@@ -1,6 +1,6 @@
 <div class="container contact">
   <div class="row">
-    <%= render "partials/static_page_heading", locals: { header_title: "Contact Us", column_classes: "col-12", title_modifier: "--large-margin" } do %>
+    <%= render "partials/static_page_heading", locals: { header_title: "Contact Us", column_classes: "col-12 header--main" } do %>
       <div class="header__content">
         Use the form below to drop us an email.
       </div>
@@ -15,15 +15,15 @@
     <div class="col-12 col-lg-8">
       <form>
         <div class="form-group">
-          <label class="body-medium" for="name_input">Name</label>
+          <label class for="name_input">Name</label>
           <input type="email" class="form-control" id="name_input" aria-describedby="emailHelp" placeholder="Enter your name" />
         </div>
         <div class="form-group">
-          <label class="body-medium" for="emailInput">Email</label>
+          <label class for="emailInput">Email</label>
           <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter your email" />
         </div>
         <div class="form-group">
-          <label class="body-medium" for="feedbBackTextarea">Feedback</label>
+          <label class for="feedbBackTextarea">Feedback</label>
           <textarea class="form-control" id="feedbBackTextarea" aria-describedby="Feedback" placeholder="Enter your feedback" rows="4"></textarea>
         </div>
         <button type="submit" class="col-lg-6  col btn btn-secondary">Submit</button>

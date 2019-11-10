@@ -39,24 +39,47 @@
           <% end %>
         </div>
       </div>
-    </div>
-
-    <% if user_profile_page? %>
-      <div class="col-6 user-header__info--margin-0 align-self-center d-lg-none">
-        <h1 class="user-header__name">
-          <%= @user.name %>
-        </h1>
-        <p class="user-header__location #{show_location?}">
-          <%= @user.location %>
-        </p>
-      </div>
-      <% if user_profile_page? %>
-        <div class="col-6 user-header__nav-wrapper">
-          <div class="edit-profile-button-container edit-profile-button-container--d-lg-none d-flex justify-content-end">
-            <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse" %>
+      <% if user_signed_in? && current_user == @user %>
+        <div class="col ml-auto">
+          <div class="user-header__nav-wrapper d-flex flex-column">
+            <nav class="user-header__options justify-content-end d-flex">
+              <a class="mx-2" href="#">
+                <%= fa_icon "home" %>
+                <span>Home</span>
+              </a>
+              <a href="#" class="mx-2 active">
+                <%= fa_icon "user-circle" %>
+                <span>Profile</span>
+              </a>
+              <a class="mx-2" href="#">
+                <%= fa_icon "cog" %>
+                <span>Settings</span>
+              </a>
+            </nav>
+            <% if user_signed_in? && current_user == @user %>
+              <div class="edit-profile-button-container mx-2">
+                <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse ml-auto" %>
+              </div>
+            <% end %>
           </div>
         </div>
       <% end %>
+    </div>
+
+    <div class="<% user_signed_in? && current_user == @user ? "col-6" : "col-12" %> user-header__info--margin-0 align-self-center d-lg-none">
+      <h1 class="user-header__name">
+        <%= @user.name %>
+      </h1>
+      <p class="user-header__location #{show_location?}">
+        <%= @user.location %>
+      </p>
+    </div>
+    <% if user_signed_in? && current_user == @user %>
+      <div class="col-6 user-header__nav-wrapper">
+        <div class="edit-profile-button-container--d-lg-none mx-2">
+          <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse #{show_edit_button?(@user)}" %>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>
