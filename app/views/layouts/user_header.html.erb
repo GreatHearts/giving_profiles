@@ -19,7 +19,7 @@
       <div class="col ml-auto">
         <div class="user-header__nav-wrapper d-flex flex-column">
           <nav class="user-header__options justify-content-end d-flex">
-            <a class="mx-2" href="#">
+            <%= link_to "Home", home_user_path(@user), class: "fa fa-home" %>
               <%= fa_icon "home" %>
               <span>Home</span>
             </a>
