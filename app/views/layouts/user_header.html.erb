@@ -20,8 +20,8 @@
       <div class="col ml-auto">
         <div class="user-header__nav-wrapper d-flex flex-column">
           <nav class="user-header__options justify-content-end d-flex">
-            <%= link_to "Home", home_user_path(@user), class: "fa fa-home mx-2" %>
-            <%= link_to "Profile", (@user), class: "fa fa-user-circle mx-2 active" %>
+            <%= link_to "Home", home_user_path(@user), class: "fa fa-home mx-2 active" %>
+            <%= link_to "Profile", (@user), class: "fa fa-user-circle mx-2" %>
             <%= link_to "Settings", (@user), class: "fa fa-cog mx-2" %>
           </nav>
           <% if user_profile_page? %>
@@ -36,7 +36,8 @@
           <div class="user-header__nav-wrapper d-flex flex-column">
             <nav class="user-header__options justify-content-end d-flex">
             <%= link_to "Home", home_user_path(@user), class: "fa fa-home mx-2" %>
-            <%= link_to "Profile", (@user), class: "fa fa-user-circle mx-2" %>
+            <%= link_to "Profile", (@user), class: "fa fa-user-circle mx-2 active" %>
+            <!--  TODO: Need to create a path for settings link-->
             <%= link_to "Settings", (@user), class: "fa fa-cog mx-2" %>
             </nav>
             <% if user_signed_in? && current_user == @user %>
