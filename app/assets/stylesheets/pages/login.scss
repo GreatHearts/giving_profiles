@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.29)), no-repeat, url(BackgroundImage.jpg);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.29)), no-repeat, image-url("BackgroundImage.jpg");
     /* Preserve aspect ratio */
     background-size: 110% auto;
     @include media-breakpoint-down(md) {

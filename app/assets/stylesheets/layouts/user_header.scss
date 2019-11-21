@@ -39,6 +39,9 @@
     @include media-breakpoint-down(md) {
       font-size: 18px;
     }
+    @include media-breakpoint-down(xs) {
+      font-size: .7em;
+    }
   }
 
   &__nav-wrapper {
@@ -69,7 +72,6 @@
   }
 
   &__social-networks {
-    min-width: 130px;
 
     a {
       display: inline-block;
