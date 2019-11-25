@@ -39,6 +39,9 @@
     @include media-breakpoint-down(md) {
       font-size: 18px;
     }
+    @include media-breakpoint-down(xs) {
+      font-size: .7em;
+    }
   }
 
   &__nav-wrapper {
@@ -46,7 +49,6 @@
 
     .edit-profile-button-container {
       align-self: flex-end;
-      display: none;
       @include media-breakpoint-up(lg) {
         margin-top: 16px;
         display: flex;
@@ -70,7 +72,6 @@
   }
 
   &__social-networks {
-    min-width: 130px;
 
     a {
       display: inline-block;

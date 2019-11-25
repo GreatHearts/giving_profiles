@@ -40,10 +40,14 @@
     color: $text-body;
     margin-left: 36px;
     margin-top: 20px;
-
+    
     &__input {
+      display: none;
       &--no-background {
         background: none;
+        @include media-breakpoint-down(xs) {
+          width:110px;
+        }
       }
     }
   }
