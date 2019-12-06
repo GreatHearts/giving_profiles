@@ -20,25 +20,25 @@
       <div class="col ml-auto">
         <div class="user-header__nav-wrapper d-flex flex-column">
           <nav class="user-header__options justify-content-end d-flex">
-            <%= link_to "Home", home_user_path(@user), class: "fa fa-home mx-2 active" %>
-            <%= link_to "Profile", (@user), class: "fa fa-user-circle mx-2" %>
-            <%= link_to "Settings", (@user), class: "fa fa-cog mx-2" %>
+            <%= link_to "Home", home_user_path(@user), class: "btn btn-white fa fa-home mx-2" %>
+            <%= link_to "Profile", (@user), class: "btn btn-white fa fa-user-circle mx-2" %>
+            <%= link_to "Settings", (@user), class: "btn btn-white fa fa-cog mx-2" %>
           </nav>
-          <% if user_profile_page? %>
+          <% else %>
             <div class="edit-profile-button-container mx-2">
               <%= link_to "Edit Profile", edit_user_path(@user), class: "btn btn-white align-self-end flex-row-reverse ml-auto" %>
             </div>
           <% end %>
         </div>
       </div>
-      <% else %>
+      <% if user_profile_page? %>
         <div class="col ml-auto">
           <div class="user-header__nav-wrapper d-flex flex-column">
             <nav class="user-header__options justify-content-end d-flex">
-            <%= link_to "Home", home_user_path(@user), class: "fa fa-home mx-2" %>
-            <%= link_to "Profile", (@user), class: "fa fa-user-circle mx-2 active" %>
+            <%= link_to "Home", home_user_path(@user), class: "btn btn-white fa fa-home mx-2 active" %>
+            <%= link_to "Profile", (@user), class: "btn btn-white fa fa-user-circle mx-2" %>
             <!--  TODO: Need to create a path for settings link-->
-            <%= link_to "Settings", (@user), class: "fa fa-cog mx-2" %>
+            <%= link_to "Settings", (@user), class: "btn btn-white fa fa-cog mx-2" %>
             </nav>
             <% if user_signed_in? && current_user == @user %>
               <div class="edit-profile-button-container mx-2">
