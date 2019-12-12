@@ -15,7 +15,8 @@ class Organization < ApplicationRecord
     human_rights: "human_rights",
     human_services: "human_services",
     international: "international",
-    religion: "religion"
+    religion: "religion",
+    unknown: "unknown"
   }
 
   has_many :donations, dependent: :destroy
