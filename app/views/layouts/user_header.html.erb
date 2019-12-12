@@ -28,10 +28,11 @@
                 <%= fa_icon "user-circle" %>
                 <span>Profile</span>
               </a>
-              <a class="mx-2" href="#">
+
+<!--               <a class="mx-2" href="#">
                 <%= fa_icon "cog" %>
                 <span>Settings</span>
-              </a>
+              </a> -->
             </nav>
             <% if user_signed_in? && current_user == @user %>
               <div class="edit-profile-button-container mx-2">
@@ -47,7 +48,7 @@
       <h1 class="user-header__name">
         <%= @user.name %>
       </h1>
-      <p class="user-header__location #{show_location?}">
+      <p class="user-header__location #{show_`location?}">
         <%= @user.location %>
       </p>
     </div>
