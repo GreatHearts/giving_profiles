@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_213317) do
+ActiveRecord::Schema.define(version: 2019_12_13_000829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,11 +29,11 @@ ActiveRecord::Schema.define(version: 2019_07_18_213317) do
   create_table "organizations", force: :cascade do |t|
     t.string "name", null: false
     t.string "fb_url"
-    t.string "org_type"
+    t.string "org_type", default: "unknown"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "location"
-    t.string "avatar_url"
+    t.string "location", default: ""
+    t.string "avatar_url", default: "default_avatar.png"
     t.index ["fb_url"], name: "index_organizations_on_fb_url", unique: true
     t.index ["location"], name: "index_organizations_on_location"
     t.index ["name"], name: "index_organizations_on_name", unique: true
